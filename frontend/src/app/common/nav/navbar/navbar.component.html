@@ -1,1 +1,15 @@
-<p>navbar works!</p>
+<nav class="navbar bg-dark fixed-top"  [ngStyle]="{ 'top' : isNavOpen ? '0' : '-74px' }"> <!-- [ngClass]="{'hidden': isNavbarHidden}" -->
+  <div class="container-fluid justify-content-between px-4">
+    <a class="navbar-brand active text-white" [routerLink]="['']" (click)="inputSidenav.close()">Quiz</a>
+    <div class="d-flex flex-row justify-content-center align-items-center">
+      <!-- <app-lang-switcher class="me-4"></app-lang-switcher> -->
+      <label for="check">
+        <input [checked]="inputSidenavState" type="checkbox" id="check" (click)="inputSidenav.toggle()" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <!-- <div i18n class="small py-auto">Menu </div> -->
+  </div>
+</nav>

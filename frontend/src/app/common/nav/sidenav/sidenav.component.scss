@@ -1,0 +1,264 @@
+@use '../../../../styles'as styles;
+// @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One|Roboto+Mono:400,700&display=swap');
+
+// @font-face {
+//   font-family: nunito;
+//   src: url(../../../../assets/fonts/Nunito-VariableFont_wght.ttf) format("TrueType");
+// }
+
+// .home {
+//   font-family: nunito;
+// }
+
+.close-btn {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: #212529d7;
+  padding: 1rem;
+  color: white;
+  margin-left: auto;
+
+}
+
+aside {
+  min-height: 100%;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.main-content {
+  min-height: 100% !important;
+}
+
+a {
+  all: unset;
+  color: #212529d7;
+  cursor: pointer;
+  font-family: nunito;
+
+
+  &:hover {
+    color: black;
+  }
+}
+
+.title-1 {
+  font-size: 2.5em;
+  font-weight: 1000;
+  text-transform: capitalize;
+  line-height: 1.5em;
+  margin-top: 1em;
+  padding: 0;
+}
+
+.title-2 {
+  font-size: 1.8em;
+  font-weight: 900;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.title-3 {
+  font-size: 1.3em;
+  font-weight: 900;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.under-line {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 2px;
+}
+
+.logo-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: gray;
+  font-size: 14px;
+}
+
+.own {
+  all: unset;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+li ul {
+  padding: 0;
+}
+
+.icon-link {
+  all: unset;
+  color: gray;
+  cursor: pointer;
+
+  :hover {
+    color: black;
+  }
+}
+
+.footer {
+  margin-top: auto;
+}
+
+// ========================
+// New SCSS ------ New SCSS
+// ========================
+$color-default: #212529b3;
+// $color-hover: #000;
+$color-hover: #32CD32;
+$color-hover: cyan;
+$color-primary: #18181A;
+$color-secondary: #75757C;
+// $font-family-primary: 'Roboto Mono', monospace;
+// $font-family-secondary: 'Rubik Mono One', sans-serif;
+
+// Global transition values
+$td: 150ms;
+$te: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+// ================================
+// Main navigation
+// ================================
+.nav-main {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+// ================================
+// Menu
+// ================================
+.menu {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+
+  // > .menu__item {
+  //   // font-family: var($font-family-secondary);
+  //   // font-size: 10vmin;
+  // }
+}
+
+// ================================
+// Submenu
+// ================================
+.submenu {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(-10%);
+  top: 100%;
+  width: 100%;
+  visibility: hidden;
+  z-index: 2;
+
+  .menu__item {
+    // font-family: var($font-family-primary);
+    // font-size: 3.5vmin;
+    width: 100%;
+  }
+
+  .menu__link {
+    color: $color-secondary;
+    text-shadow:
+      1px 1px 0 $color-primary,
+      2px 2px 0 $color-primary;
+  }
+}
+
+// ================================
+// Menu item
+// ================================
+.menu__item {
+  display: block;
+  position: relative;
+
+  &:hover .submenu {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      transform calc($td) calc($td) * 3 $te,
+      opacity calc($td) calc($td) * 3 $te,
+      visibility 0s calc($td) * 3;
+    visibility: visible;
+  }
+}
+
+// ================================
+// Menu link
+// ================================
+.menu__link {
+  color: $color-default;
+  display: inline-block;
+  font-family: nunito;
+  // font-weight: normal;
+  overflow: hidden;
+  padding: 0.5rem 1rem 0.125rem;
+  position: relative;
+  z-index: 1;
+}
+
+// ================================
+// Menu item hover styles
+// ================================
+.menu:not(:focus-within):not(:hover) .menu__item {
+  .menu__link {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.menu__item {
+  $pull: 30%;
+
+  .menu__link {
+    font-family: nunito;
+
+    opacity: 0.25;
+    transition-duration: calc($td) * 3;
+    transform: translate(0, calc($pull) * -1);
+  }
+
+  .submenu .menu__link {
+    opacity: 1;
+  }
+
+  &:hover > .menu__link {
+    color: $color-secondary;
+    opacity: 1;
+    transform: translate(0, 0);
+
+    &:hover {
+      font-family: nunito;
+
+      color: $color-hover;
+      transition-delay: 0s;
+      text-shadow:
+        1px 1px 0 $color-primary,
+        2px 2px 0 $color-primary;
+
+    }
+  }
+
+  &:hover ~ .menu__item > .menu__link {
+    transition-duration: calc($td) * 3;
+    transform: translate(0, $pull);
+  }
+}
+
+// ================================
+// Animations
+// ================================
+@keyframes blink {
+  50%, 100% { opacity: 0 }
+}

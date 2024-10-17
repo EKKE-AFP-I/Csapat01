@@ -1,1 +1,59 @@
-<p>sidenav works!</p>
+<aside class="container d-flex flex-column justify-content-between align-items-center text-center py-3 nunito">
+  <section class="d-flex flex-column align-items-center justify-content-center">
+    <a class="title-1" [routerLink]="['/']" (click)="inputSidenavClose.close()">Home</a>
+  </section>
+
+  <section id="main-navigation" class="nav-main">
+    <ul class="own menu">
+      <!-- <li class="menu__item">
+        <a class="menu__link title-2 under-line">Start New Life!</a>
+        <ul class="own submenu">
+          <li class="menu__item">
+            <a class="menu__link title-3" [routerLink]="['/how-to-start-a-new-life']" (click)="inputSidenavClose.close()">How?</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link title-3">Why?</a>
+          </li>
+        </ul>
+      </li> -->
+      <li class="menu__item">
+        <a class="menu__link title-2">Quiz</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link title-2">Admin</a>
+      </li>
+      <!-- <li class="menu__item">
+        <a class="menu__link title-2">Goals</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link title-2">Stories</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link title-2">Join us!</a>
+      </li> -->
+    </ul>
+  </section>
+
+  <section></section>
+
+  <section class="col-6">
+    <ul class="own d-flex flex-row align-items-between justify-content-between">
+      <li>
+        <a href="" class="icon-link">
+          <fa-icon [icon]="faFacebook"></fa-icon>
+        </a>
+      </li>
+      <li>
+        <a href="" class="icon-link">
+          <fa-icon [icon]="faDiscord"></fa-icon>
+        </a>
+      </li>
+      <li>
+        <a href="" class="icon-link">
+          <fa-icon [icon]="faInstagram"></fa-icon>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+</aside>
