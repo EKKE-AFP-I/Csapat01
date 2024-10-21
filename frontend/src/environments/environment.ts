@@ -1,4 +1,4 @@
 export const environment = {
-  apiUrl: 'http://localhost:3000/quiz/',
+  apiUrl: 'http://localhost:3000/',
 
 };
