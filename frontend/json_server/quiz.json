@@ -1,0 +1,14 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Hány éves a kapitány?",
+      "answer1": "42",
+      "answer2": "42",
+      "answer3": "42",
+      "answer4": "42",
+      "correctAnswerId": false,
+      "active": true
+    }
+  ]
+}
