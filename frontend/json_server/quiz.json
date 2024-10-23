@@ -7,7 +7,7 @@
       "answer2": "42",
       "answer3": "42",
       "answer4": "42",
-      "correctAnswerId": false,
+      "correctAnswerId": 1,
       "active": true
     }
   ]

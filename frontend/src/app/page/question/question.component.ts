@@ -2,11 +2,15 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { QuizService } from '../../service/quiz.service';
 import { CommonModule } from '@angular/common';
+import { AnswerComponent } from '../../common/answer/answer.component';
 
 @Component({
   selector: 'app-question',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    AnswerComponent
+  ],
   templateUrl: './question.component.html',
   styleUrl: './question.component.scss'
 })

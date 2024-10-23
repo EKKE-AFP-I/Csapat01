@@ -1,17 +1,25 @@
-<p>question works!</p>
-<div *ngIf="list$ | async as list">
-  <div *ngFor="let quiz of list" class="card" style="width: 18rem;">
-    <div class="card-header">
-      {{ quiz.id }}
+
+<div class="nav-gap">
+  <div class="d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <!-- <p>question works!</p> -->
+    <div *ngIf="list$ | async as list">
+      <div *ngFor="let quiz of list" class="card" style="width: 18rem;">
+        <div class="card-header">
+          {{ quiz.id }}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{ quiz.question }}</li>
+          <app-answer [answer]="quiz.answer1"></app-answer>
+          <app-answer [answer]="quiz.answer2"></app-answer>
+          <app-answer [answer]="quiz.answer3"></app-answer>
+          <app-answer [answer]="quiz.answer4"></app-answer>
+          <li class="list-group-item">{{ quiz.correctAnswerId }}</li>
+          <li class="list-group-item">{{ quiz.active }}</li>
+        </ul>
+        <div class="card-footer">
+          {{ quiz.id }}
+        </div>
+      </div>
     </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">{{ quiz.question }}</li>
-      <li class="list-group-item">{{ quiz.answer1 }}</li>
-      <li class="list-group-item">{{ quiz.answer2 }}</li>
-      <li class="list-group-item">{{ quiz.answer3 }}</li>
-      <li class="list-group-item">{{ quiz.answer4 }}</li>
-      <li class="list-group-item">{{ quiz.correctAnswerId }}</li>
-      <li class="list-group-item">{{ quiz.active }}</li>
-    </ul>
   </div>
 </div>
