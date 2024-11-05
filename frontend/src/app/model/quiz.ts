@@ -5,6 +5,6 @@ export class Quiz {
   answer2: string = '';
   answer3: string = '';
   answer4: string = '';
-  correctAnswerId: number = 0;
+  correctAnswer: number = 0;
   active: boolean = true
 }
