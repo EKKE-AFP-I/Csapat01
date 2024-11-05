@@ -17,10 +17,10 @@
         </ul>
       </li> -->
       <li class="menu__item">
-        <a class="menu__link title-2">Quiz</a>
+        <a class="menu__link title-2" [routerLink]="['/question']" (click)="inputSidenavClose.close()">Quiz</a>
       </li>
       <li class="menu__item">
-        <a class="menu__link title-2">Admin</a>
+        <a class="menu__link title-2" [routerLink]="['/admin-home']" (click)="inputSidenavClose.close()">Admin</a>
       </li>
       <!-- <li class="menu__item">
         <a class="menu__link title-2">Goals</a>
