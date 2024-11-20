@@ -2,7 +2,8 @@
   <div class="d-flex flex-column justify-content-center align-items-center min-vh-100">
     <!-- <p>question works!</p> -->
     <div *ngIf="list$ | async as list">
-      <div *ngFor="let quiz of list" class="card" style="width: 18rem;">
+      <!-- <div *ngFor="let quiz of list" class="card" style="width: 18rem;"> -->
+      <div *ngIf="list[0] as quiz" class="card" style="width: 18rem;">
         <div class="card-header">
           {{ quiz.id }}
         </div>

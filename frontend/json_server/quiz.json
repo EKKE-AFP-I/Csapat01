@@ -1,13 +1,47 @@
 {
   "quiz": [
     {
-      "id": 1,
+      "id": "1",
+      "questionType": "asd",
       "question": "Hány éves a kapitány?",
       "answer1": "42",
       "answer2": "42",
       "answer3": "42",
       "answer4": "42",
       "correctAnswer": 1,
+      "active": true
+    },
+    {
+      "id": "0",
+      "questionType": "",
+      "question": "",
+      "answer1": "",
+      "answer2": "",
+      "answer3": "",
+      "answer4": "",
+      "correctAnswer": 0,
+      "active": true
+    },
+    {
+      "id": "0",
+      "questionType": "",
+      "question": "",
+      "answer1": "",
+      "answer2": "",
+      "answer3": "",
+      "answer4": "",
+      "correctAnswer": 0,
+      "active": true
+    },
+    {
+      "id": 0,
+      "questionType": "",
+      "question": "",
+      "answer1": "",
+      "answer2": "",
+      "answer3": "",
+      "answer4": "",
+      "correctAnswer": 0,
       "active": true
     }
   ]
