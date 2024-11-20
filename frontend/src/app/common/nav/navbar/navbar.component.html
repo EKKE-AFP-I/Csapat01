@@ -3,6 +3,7 @@
     <a class="navbar-brand active text-white" [routerLink]="['']" (click)="inputSidenav.close()">Quiz</a>
     <div class="d-flex flex-row justify-content-center align-items-center">
       <!-- <app-lang-switcher class="me-4"></app-lang-switcher> -->
+      <a class="navbar-item text-white me-3" [routerLink]="['login']" (click)="inputSidenav.close()">Login</a>
       <label for="check">
         <input [checked]="inputSidenavState" type="checkbox" id="check" (click)="inputSidenav.toggle()" />
         <span></span>
