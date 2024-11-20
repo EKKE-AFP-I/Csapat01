@@ -1,34 +1,55 @@
-<div class="nav-gap">
-  <div class="d-flex flex-column justify-content-center align-items-center min-vh-100">
-    <!-- <p>question works!</p> -->
-    <div *ngIf="list$ | async as list">
-      <!-- <div *ngFor="let quiz of list" class="card" style="width: 18rem;"> -->
-      <div *ngIf="list[0] as quiz" class="card" style="width: 18rem;">
-        <div class="card-header">
-          {{ quiz.id }}
-        </div>
-        <!-- <form [formGroup]="quizForm"> -->
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">{{ quiz.question }}</li>
-            <button (click)="selectAnswer(quiz.correctAnswer == 1)" mat-raised-button>{{ quiz.answer1 }}</button>
-            <button (click)="selectAnswer(quiz.correctAnswer == 2)" mat-raised-button>{{ quiz.answer2 }}</button>
-            <button (click)="selectAnswer(quiz.correctAnswer == 3)" mat-raised-button>{{ quiz.answer3 }}</button>
-            <button (click)="selectAnswer(quiz.correctAnswer == 4)" mat-raised-button>{{ quiz.answer4 }}</button>
-            <!-- <app-answer [answer]="quiz.answer1"></app-answer>
-            <app-answer [answer]="quiz.answer2"></app-answer>
-            <app-answer [answer]="quiz.answer3"></app-answer>
-            <app-answer [answer]="quiz.answer4"></app-answer> -->
-            <li class="list-group-item">{{ quiz.correctAnswer }}</li>
-            <li class="list-group-item">{{ quiz.active }}</li>
-          </ul>
-        <!-- </form> -->
-        <div *ngIf="success == 1" class="card-footer">
-          YEEY! Correct answer!
-        </div>
-        <div *ngIf="success == -1" class="card-footer">
-          Oh noo! Wrong answer!
-        </div>
-      </div>
-    </div>
+<main>
+  <div class="nav-gap">
   </div>
-</div>
+  <div *ngIf="list$ | async as list" class="d-flex flex-column justify-content-center align-items-center">
+    <div *ngIf="list[0] as quiz" class="quiz-container col-10 col-lg-8 col-xl-6">
+      <div class="question">{{ quiz.question }}</div>
+      <div class="answer-buttons d-flex flex-column flex-lg-row col-12 flex-wrap">
+        <div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 p-2 p-lg-3">
+          <button (click)="selectAnswer(quiz.correctAnswer == 1)" class="col-12 p-2 p-lg-3" mat-raised-button>{{ quiz.answer1 }}</button>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 p-2 p-lg-3">
+          <button (click)="selectAnswer(quiz.correctAnswer == 2)" class="col-12 p-2 p-lg-3" mat-raised-button>{{ quiz.answer2 }}</button>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 p-2 p-lg-3">
+          <button (click)="selectAnswer(quiz.correctAnswer == 3)" class="col-12 p-2 p-lg-3" mat-raised-button>{{ quiz.answer3 }}</button>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 p-2 p-lg-3">
+          <button (click)="selectAnswer(quiz.correctAnswer == 4)" class="col-12 p-2 p-lg-3" mat-raised-button>{{ quiz.answer4 }}</button>
+        </div>
+        <!-- <button (click)="selectAnswer(quiz.correctAnswer == 2)" class="answer-button col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6" mat-raised-button>{{ quiz.answer2 }}</button>
+        <button (click)="selectAnswer(quiz.correctAnswer == 3)" class="answer-button col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6" mat-raised-button>{{ quiz.answer3 }}</button>
+        <button (click)="selectAnswer(quiz.correctAnswer == 4)" class="answer-button col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6" mat-raised-button>{{ quiz.answer4 }}</button> -->
+      </div>
+      <div *ngIf="success == 1" class="card-footer">
+        YEEY! Correct answer!
+      </div>
+      <div *ngIf="success == -1" class="card-footer">
+        Oh noo! Wrong answer!
+      </div>
+
+
+    </div>
+    <!-- <div *ngFor="let quiz of list" class="card" style="width: 18rem;"> -->
+    <!-- <div *ngIf="list[0] as quiz" class="card" style="width: 18rem;">
+      <div class="card-header">
+        {{ quiz.id }}
+      </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{ quiz.question }}</li>
+          <button (click)="selectAnswer(quiz.correctAnswer == 1)" mat-raised-button>{{ quiz.answer1 }}</button>
+          <button (click)="selectAnswer(quiz.correctAnswer == 2)" mat-raised-button>{{ quiz.answer2 }}</button>
+          <button (click)="selectAnswer(quiz.correctAnswer == 3)" mat-raised-button>{{ quiz.answer3 }}</button>
+          <button (click)="selectAnswer(quiz.correctAnswer == 4)" mat-raised-button>{{ quiz.answer4 }}</button>
+          <li class="list-group-item">{{ quiz.correctAnswer }}</li>
+          <li class="list-group-item">{{ quiz.active }}</li>
+        </ul>
+      <div *ngIf="success == 1" class="card-footer">
+        YEEY! Correct answer!
+      </div>
+      <div *ngIf="success == -1" class="card-footer">
+        Oh noo! Wrong answer!
+      </div>
+    </div> -->
+  </div>
+</main>
