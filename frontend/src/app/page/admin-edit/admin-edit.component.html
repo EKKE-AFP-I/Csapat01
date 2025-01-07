@@ -1,3 +1,5 @@
+<div class="nav-gap"><fa-icon class="col-12 " [icon]="faSave"></fa-icon></div>
+
 <div class="container my-5">
   <div class="row">
     <div *ngIf="(quiz$ | async) as quiz" class="col-lg-6 offset-lg-3">
@@ -130,11 +132,19 @@
           <img class="image col-8 offset-2" [src]="quiz.image">
         </div> -->
 
-        <button [disabled]="quizForm.invalid" type="submit" class="btn btn-success col-12 btn-lg mt-5">
-          <!-- <i *ngIf="!clicked" class="fa fa-save"></i>
-          <i *ngIf="clicked" class="fa fa-sync"></i> -->
+        <button [disabled]="quizForm.invalid" type="submit" class="col-12 btn-lg mt-5" mat-raised-button>
+          <fa-icon class="col-12 " [icon]="faSave"></fa-icon>
+          <fa-icon class="col-12" *ngIf="clicked" [icon]="faSync"></fa-icon>
         </button>
       </form>
     </div>
   </div>
 </div>
+<fa-icon [icon]="faSave"></fa-icon>
+<fa-icon [icon]="faSave"></fa-icon>
+<fa-icon [icon]="faSave"></fa-icon>
+<fa-icon [icon]="faSave"></fa-icon>
+<fa-icon [icon]="faSave"></fa-icon>
+<fa-icon [icon]="faSave"></fa-icon>
+<fa-icon [icon]="faSave"></fa-icon>
+<fa-icon [icon]="faSave"></fa-icon>

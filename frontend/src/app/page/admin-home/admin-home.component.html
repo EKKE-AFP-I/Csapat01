@@ -1,7 +1,7 @@
 <div class="nav-gap">
   <div class="d-flex flex-column justify-content-center align-items-center min-vh-100">
-    <div *ngIf="list$ | async as list" class="d-flex flex-row">
-      <div *ngFor="let quiz of list" class="card" style="width: 18rem;">
+    <div *ngIf="list$ | async as list" class="d-flex flex-row flex-wrap offset-1 align-items-center justify-content-center">
+      <div *ngFor="let quiz of list" class="card " style="width: 18rem;">
         <div class="card-header">
           {{ quiz.id }}
         </div>

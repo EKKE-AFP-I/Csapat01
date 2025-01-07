@@ -5,13 +5,18 @@ import { QuizService } from '../../service/quiz.service';
 import { Quiz } from '../../model/quiz';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { faSave, faSync } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-admin-edit',
   standalone: true,
   imports: [
     FormsModule,
-    CommonModule
+    CommonModule,
+    FontAwesomeModule,
+    MatButtonModule
   ],
   templateUrl: './admin-edit.component.html',
   styleUrl: './admin-edit.component.scss'
@@ -26,8 +31,11 @@ export class AdminEditComponent {
       return of(new Quiz())
     })
   );
-  // clicked: boolean;
 
+  clicked: boolean = false;
+
+  faSave = faSave;
+  faSync = faSync;
 
   constructor(
     private router: Router,
@@ -37,7 +45,7 @@ export class AdminEditComponent {
 
 
   onUpdate(quiz: Quiz): void {
-    // this.clicked = true;
+    this.clicked = true;
     if (quiz.id === 0) {
       this.quizService.create(quiz)
       .subscribe({
