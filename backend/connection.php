@@ -26,6 +26,11 @@ function execute_dml(string $query, array $query_params = []) : bool {
 }
 function execute_ql_list(string $query, array $query_params = []) : array{
     $result = [];
-    
+    $connection = get_connection();
+    $statement = $connection->prepare($query);
+    $execution_result = $statement->execute($query_params);
+    if($execution_result) $result = $statement->fetchAll();
+    $statement->closeCursor();
+    close_connection($connection);
     return $result;
 }
