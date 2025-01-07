@@ -17,5 +17,10 @@ function close_connection(PDO $connection){
     $connection = null;
 }
 function execute_dml(string $query, array $query_params = []) : bool {
-    
+    $connection = get_connection();
+    $statement = $connection->prepare($query);
+    $result = $statement->execute($query_params);
+    $statement->closeCursor();
+    close_connection($connection);
+    return $result;
 }
