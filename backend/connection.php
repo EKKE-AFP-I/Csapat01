@@ -24,3 +24,8 @@ function execute_dml(string $query, array $query_params = []) : bool {
     close_connection($connection);
     return $result;
 }
+function execute_ql_list(string $query, array $query_params = []) : array{
+    $result = [];
+    
+    return $result;
+}
