@@ -16,3 +16,6 @@ function get_connection() : PDO {
 function close_connection(PDO $connection){
     $connection = null;
 }
+function execute_dml(string $query, array $query_params = []) : bool {
+    
+}
