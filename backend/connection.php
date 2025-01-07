@@ -13,3 +13,6 @@ function get_connection() : PDO {
 
     return $connection;
 }
+function close_connection(PDO $connection){
+    $connection = null;
+}
