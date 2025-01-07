@@ -4,18 +4,43 @@
   <div class="row">
     <div *ngIf="(quiz$ | async) as quiz" class="col-lg-6 offset-lg-3">
       <h3 class="py-2">Adatok szerkesztése</h3>
-      <form #quizForm="ngForm" (ngSubmit)="onUpdate(quiz)">
+      <form #quizForm="ngForm" >
 
         <div class=" mt-3">
           <div class="d-flex justify-content-between">
             <label for="">#</label>
           </div>
-          <input name="id" [(ngModel)]="quiz.id" type="text" class="form-control" disabled required>
+          <input name="idasd" [(ngModel)]="quiz.id" type="text" class="form-control" disabled required>
+        </div>
+
+        <div class=" mt-3">
+          <div class="d-flex justify-content-between">
+            <label for="">#</label>
+          </div>
+          <input name="type" [(ngModel)]="quiz.questionType" type="text" class="form-control" required>
         </div>
 
         <div class="form-group mt-3">
           <div class="d-flex justify-content-between">
-            <label for="">questionType</label>
+            <label for="">questionType
+              <!-- <button (click)="consoleWrite(quizForm.controls['id'].valid)" type="button">Log</button> -->
+              <button (click)="consoleWrite(quizForm.controls)" type="button">Log</button>
+            </label>
+            <input name="type2" [(ngModel)]="quiz.questionType" type="text" class="form-control"
+              pattern="^.{2,20}$" required>
+            <div [hidden]="quizForm.controls['type2'].valid" class="error-message mt-1">
+              <small>
+                A típus 2-20 karakter hosszú lehet!
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class=" mt-3">
+          <div class="d-flex justify-content-between">
+            <label for="">questionType
+              <button (click)="consoleWrite(quizForm)" type="button">Log</button>
+            </label>
             <div [hidden]="quizForm.controls['type'].valid" class="error-message mt-1">
               <small>
                 A típus 2-20 karakter hosszú lehet!
@@ -24,7 +49,7 @@
           </div>
           <input name="type" [(ngModel)]="quiz.questionType" type="text" class="form-control"
             pattern="^.{2,20}$" required>
-        </div>
+        </div> -->
 
         <div class="form-group mt-3">
           <div class="d-flex justify-content-between">
@@ -117,29 +142,16 @@
           pattern="^.{5,250}$" required>
         </div>
 
-        <!-- <div class="form-group mt-3">
-          <div class="d-flex justify-content-between">
-            <label for="">Kép linkje</label>
-            <div [hidden]="quizForm.controls['image'].valid" class="error-message mt-1">
-              <small>
-                A link legalább 10 karakter hosszú legyen!
-              </small>
-            </div>
-          </div>
-          <input name="image" [(ngModel)]="quiz.image" type="text" class="form-control"
-            pattern="^.{10,}$">
-
-          <img class="image col-8 offset-2" [src]="quiz.image">
-        </div> -->
-
         <button [disabled]="quizForm.invalid" type="submit" class="col-12 btn-lg mt-5" mat-raised-button>
           <fa-icon class="col-12 " [icon]="faSave"></fa-icon>
           <fa-icon class="col-12" *ngIf="clicked" [icon]="faSync"></fa-icon>
         </button>
+
       </form>
     </div>
   </div>
 </div>
+
 <fa-icon [icon]="faSave"></fa-icon>
 <fa-icon [icon]="faSave"></fa-icon>
 <fa-icon [icon]="faSave"></fa-icon>

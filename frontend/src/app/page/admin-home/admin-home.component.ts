@@ -24,7 +24,7 @@ export class AdminHomeComponent {
 
   list$ = this.quizService.getAll();
 
-  // faSave = faSave;
+  faSave = faSave;
 
   constructor(
     private quizService: QuizService,

@@ -66,11 +66,17 @@ export class AdminEditComponent {
       });
     }
   }
+
   // onDanger(arg0: string, arg1: string): void {
   //   throw new Error('Method not implemented.');
   // }
   // onSuccess(arg0: string) {
   //   throw new Error('Method not implemented.');
   // }
+
+
+  consoleWrite(obj: any) {
+    console.log(obj);
+  }
 
 }
