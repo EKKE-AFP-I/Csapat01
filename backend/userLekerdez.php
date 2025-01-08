@@ -14,8 +14,10 @@
     }
 
     $all_users = get_all_users(); 
+    echo "All users: <br>";
     echo $all_users;
 
     $user = get_user_by_id(1); 
+    echo "User with id 1: <br>";
     echo $user;
 ?>
