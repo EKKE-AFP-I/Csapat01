@@ -19,7 +19,10 @@
         return json_encode($users);
     }
     function get_user_role_by_id($id) { 
- 
+        $query = 'SELECT role FROM users WHERE id = :id;'; 
+        $query_params = ['id' => $id]; 
+        $role = execute_ql_list($query, $query_params); 
+        return json_encode($role);
     }
 
     $all_users = get_all_users(); 
@@ -33,4 +36,8 @@
     $best_users = get_users_by_score(3);
     echo "Best 3 users: <br>";
     echo $best_users;
+
+    $role = get_user_role_by_id(1);
+    echo "Role of user with id 1: <br>";
+    echo $role;
 ?>
