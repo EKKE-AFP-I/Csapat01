@@ -13,7 +13,10 @@
         return json_encode($user); 
     }
     function get_users_by_score($user_cnt) { 
- 
+        $query = 'SELECT * FROM users ORDER BY score DESC LIMIT :user_cnt;'; 
+        $query_params = ['user_cnt' => $user_cnt]; 
+        $users = execute_ql_list($query, $query_params); 
+        return json_encode($users);
     }
 
     $all_users = get_all_users(); 
@@ -23,4 +26,8 @@
     $user = get_user_by_id(1); 
     echo "User with id 1: <br>";
     echo $user;
+
+    $best_users = get_users_by_score(3);
+    echo "Best 3 users: <br>";
+    echo $best_users;
 ?>
