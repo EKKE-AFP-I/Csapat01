@@ -6,7 +6,7 @@ import { environment } from '../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class BaseService<T extends { id?: number }> {
+export class BaseService<T extends { id?: string }> {
 
   apiUrl = environment.apiUrl;
   entity: string = '';
@@ -19,7 +19,7 @@ export class BaseService<T extends { id?: number }> {
     return this.http.get<T[]>(`${this.apiUrl}${this.entity}`);
   }
 
-  get(id: number): Observable<T> {
+  get(id: string): Observable<T> {
     return this.http.get<T>(`${this.apiUrl}${this.entity}/${id}`);
   }
 
@@ -31,7 +31,7 @@ export class BaseService<T extends { id?: number }> {
     return this.http.patch<T>(`${this.apiUrl}${this.entity}/${entity.id}`, entity);
   }
 
-  remove(id: number): Observable<T> {
+  remove(id: string): Observable<T> {
     return this.http.delete<T>(`${this.apiUrl}${this.entity}/${id}`);
   }
 
