@@ -19,7 +19,10 @@
         return json_encode($games);
     }
     function get_all_games_by_user_id($user_id) { 
-        
+        $query = 'SELECT * FROM games WHERE user_id = :user_id;'; 
+        $query_params = ['user_id' => $user_id]; 
+        $games = execute_ql_list($query, $query_params); 
+        return json_encode($games);
     }
 
     $all_games = get_all_games();
@@ -33,3 +36,7 @@
     $best_games = get_games_by_score(3);
     echo "Best 3 games: <br>";
     echo $best_games;
+
+    $games_by_user_id = get_all_games_by_user_id(1);
+    echo "Games of user with id 1: <br>";
+    echo $games_by_user_id;
