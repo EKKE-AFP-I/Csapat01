@@ -12,6 +12,9 @@
         $user = execute_ql_list($query, $query_params); 
         return json_encode($user); 
     }
+    function get_users_by_score($user_cnt) { 
+ 
+    }
 
     $all_users = get_all_users(); 
     echo "All users: <br>";
