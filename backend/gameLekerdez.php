@@ -12,6 +12,9 @@
         $game = execute_ql_list($query, $query_params); 
         return json_encode($game); 
     }
+    function get_games_by_score($game_cnt) { 
+        
+    }
 
     $all_games = get_all_games();
     echo "All games: <br>";
