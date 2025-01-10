@@ -18,6 +18,9 @@
         $games = execute_ql_list($query, $query_params); 
         return json_encode($games);
     }
+    function get_all_games_by_user_id($user_id) { 
+        
+    }
 
     $all_games = get_all_games();
     echo "All games: <br>";
