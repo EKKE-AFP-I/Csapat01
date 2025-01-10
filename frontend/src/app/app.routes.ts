@@ -18,8 +18,8 @@ export const routes: Routes = [
     component: LoginComponent,
   },
   {
-    path: 'register',
-    title: 'Register',
+    path: 'sign-up',
+    title: 'Sign-up',
     component: RegisterComponent,
   },
   {

@@ -4,6 +4,7 @@
     <div class="d-flex flex-row justify-content-center align-items-center">
       <!-- <app-lang-switcher class="me-4"></app-lang-switcher> -->
       <a class="navbar-item text-white me-3" [routerLink]="['login']" (click)="inputSidenav.close()">Login</a>
+      <a class="navbar-item text-white me-3" [routerLink]="['sign-up']" (click)="inputSidenav.close()">Sign up</a>
       <label for="check">
         <input [checked]="inputSidenavState" type="checkbox" id="check" (click)="inputSidenav.toggle()" />
         <span></span>
