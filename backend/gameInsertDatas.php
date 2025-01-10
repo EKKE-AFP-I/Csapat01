@@ -1,5 +1,5 @@
 <?php
-    require_once './connection.php';
+    require_once 'connection.php';
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $query = 'INSERT INTO games(user_id, score, difficulty, timestamp) VALUES (:u, :s, :d, :t);';

@@ -1,5 +1,5 @@
 <?php
-    require_once './connection.php';
+    require_once 'connection.php';
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $query = 'INSERT INTO users (username, password, email) VALUES (:u, :p, :e);';
