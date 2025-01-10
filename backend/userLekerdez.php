@@ -18,6 +18,9 @@
         $users = execute_ql_list($query, $query_params); 
         return json_encode($users);
     }
+    function get_user_role_by_id($id) { 
+ 
+    }
 
     $all_users = get_all_users(); 
     echo "All users: <br>";
