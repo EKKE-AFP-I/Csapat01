@@ -46,7 +46,7 @@ export class AdminEditComponent {
 
   onUpdate(quiz: Quiz): void {
     this.clicked = true;
-    if (quiz.id === 0) {
+    if (quiz.id === "0") {
       this.quizService.create(quiz)
       .subscribe({
         error: (error) => console.log(error), //this.onDanger('We could not create the shop item.<br>Please try again later!', 'Something went wrong.')

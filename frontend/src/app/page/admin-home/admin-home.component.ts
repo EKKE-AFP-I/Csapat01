@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { AnswerComponent } from '../../common/answer/answer.component';
+// import { AnswerComponent } from '../../common/answer/answer.component';
 import { Router, RouterModule } from '@angular/router';
 import { QuizService } from '../../service/quiz.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -12,7 +12,7 @@ import { faSave } from '@fortawesome/free-solid-svg-icons';
   standalone: true,
   imports: [
     CommonModule,
-    AnswerComponent,
+    // AnswerComponent,
     MatButtonModule,
     RouterModule,
     FontAwesomeModule

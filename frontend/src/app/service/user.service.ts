@@ -12,6 +12,6 @@ export class UserService extends BaseService<User> {
     public override http: HttpClient
     ) {
     super(http);
-    this.entity = 'quiz';
+    this.entity = 'user';
   }
 }

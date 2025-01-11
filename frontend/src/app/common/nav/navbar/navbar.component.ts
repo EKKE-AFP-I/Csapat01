@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, Input } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBars, faCoins, faRightFromBracket, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { MatSidenav } from '@angular/material/sidenav';
+import { AuthService } from '../../../service/auth.service';
+import { UserService } from '../../../service/user.service';
 
 @Component({
   selector: 'app-navbar',
@@ -20,6 +22,8 @@ export class NavbarComponent {
 
   @Input() inputSidenav!: MatSidenav;
   @Input() inputSidenavState!: boolean;
+
+  loggedUser$ = this.authService.loggedUser$;
 
   faRightToBracket = faRightToBracket;
   faRightFromBracket = faRightFromBracket;
@@ -38,6 +42,21 @@ export class NavbarComponent {
       this.isNavOpen = false;
     }
     this.prevScrollpos = currentScrollPos;
+  }
+
+  constructor(
+    // faConfig: FaConfig,
+    private authService: AuthService,
+    private userService: UserService,
+    private router: Router,
+  ) {
+    // faConfig.fixedWidth = true;
+  }
+
+  logout() {
+    localStorage.removeItem('authToken');
+    this.authService.resetLoginData();
+    this.router.navigate(['/']);
   }
 
 
