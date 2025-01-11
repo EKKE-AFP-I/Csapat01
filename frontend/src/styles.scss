@@ -71,6 +71,23 @@ $danger: #e9493f;
   height: min-content;
 }
 
+.background {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  // background-image: url('../../../assets/img/joshua-earle-9idqIGrLuTE-unsplash.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+.bg-darken-wrap {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: rgba(25, 25, 25, 0.6);
+}
+
 
 // .nunito {
 //   font-family: nunito;
