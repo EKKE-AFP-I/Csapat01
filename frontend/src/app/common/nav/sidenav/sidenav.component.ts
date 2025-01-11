@@ -27,6 +27,7 @@ export class SidenavComponent {
   @Input() inputSidenavClose!: MatSidenav;
 
   loggedUser$ = this.authService.loggedUser$;
+  isAdmin: boolean = false;
 
   faFacebook = faFacebookF;
   faInstagram = faInstagram;
@@ -38,5 +39,16 @@ export class SidenavComponent {
     // private router: Router,
   ) { }
 
+  ngOnInit(): void {
+    if (this.loggedUser$) {
+      this.loggedUser$.subscribe({
+        next: (data: any) => {
+          if (data?.role == 'admin') {
+            this.isAdmin = true;
+          }
+        }
+      })
+    }
+  }
 
 }

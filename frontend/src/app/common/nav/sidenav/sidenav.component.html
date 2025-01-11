@@ -20,7 +20,7 @@
         <a class="menu__link title-2" [routerLink]="['/question']" (click)="inputSidenavClose.close()">Quiz</a>
       </li>
       <li class="menu__item">
-        <a class="menu__link title-2" [routerLink]="['/admin-home']" (click)="inputSidenavClose.close()">Admin</a>
+        <a *ngIf="loggedObject.user?.role === 'admin'" class="menu__link title-2" [routerLink]="['/admin-home']" (click)="inputSidenavClose.close()">Admin</a>
       </li>
       <li class="menu__item">
         <a *ngIf="!loggedObject.user" class="menu__link title-2" [routerLink]="['sign-up']" (click)="inputSidenavClose.close()">Sign up</a>
