@@ -1,9 +1,9 @@
-<aside class="container d-flex flex-column justify-content-between align-items-center text-center py-3 nunito">
+<aside class="container d-flex flex-column justify-content-between align-items-center text-center py-3 game-played">
   <section class="d-flex flex-column align-items-center justify-content-center">
     <a class="title-1" [routerLink]="['/']" (click)="inputSidenavClose.close()">Home</a>
   </section>
 
-  <section id="main-navigation" class="nav-main">
+  <section *ngIf="{user: loggedUser$ | async} as loggedObject" id="main-navigation" class="nav-main">
     <ul class="own menu">
       <!-- <li class="menu__item">
         <a class="menu__link title-2 under-line">Start New Life!</a>
@@ -21,6 +21,10 @@
       </li>
       <li class="menu__item">
         <a class="menu__link title-2" [routerLink]="['/admin-home']" (click)="inputSidenavClose.close()">Admin</a>
+      </li>
+      <li class="menu__item">
+        <a *ngIf="!loggedObject.user" class="menu__link title-2" [routerLink]="['sign-up']" (click)="inputSidenavClose.close()">Sign up</a>
+        <!-- <a class="menu__link title-2" [routerLink]="['/admin-home']" (click)="inputSidenavClose.close()">Admin</a> -->
       </li>
       <!-- <li class="menu__item">
         <a class="menu__link title-2">Goals</a>

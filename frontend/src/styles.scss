@@ -1,4 +1,9 @@
 // ----- FONT FAMILIES ------
+@font-face {
+  font-family: game-played;
+  src: url(./assets/fonts/GamePlayed-vYL7.ttf) format("TrueType");
+}
+
 // @font-face {
 //   font-family: nunito;
 //   src: url(./assets/fonts/Nunito-VariableFont_wght.ttf) format("TrueType");
@@ -48,9 +53,24 @@ $success: #67be4e;
 $warning: #ffc825;
 $danger: #e9493f;
 
+// ----- GLOBAL CLASSES ------
+
 .nav-gap {
   padding-top: $nav-height;
 }
+
+.game-played {
+  font-family: game-played;
+}
+
+.verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h-min-content {
+  height: min-content;
+}
+
 
 // .nunito {
 //   font-family: nunito;

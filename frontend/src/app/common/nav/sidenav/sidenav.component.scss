@@ -2,12 +2,12 @@
 // @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One|Roboto+Mono:400,700&display=swap');
 
 // @font-face {
-//   font-family: nunito;
-//   src: url(../../../../assets/fonts/Nunito-VariableFont_wght.ttf) format("TrueType");
+//   font-family: game-played;
+//   src: url(../../../../assets/fonts/game-played-VariableFont_wght.ttf) format("TrueType");
 // }
 
 // .home {
-//   font-family: nunito;
+//   font-family: game-played;
 // }
 
 .close-btn {
@@ -36,7 +36,7 @@ a {
   all: unset;
   color: #212529d7;
   cursor: pointer;
-  font-family: nunito;
+  font-family: game-played;
 
 
   &:hover {
@@ -200,7 +200,7 @@ $te: cubic-bezier(0.215, 0.61, 0.355, 1);
 .menu__link {
   color: $color-default;
   display: inline-block;
-  font-family: nunito;
+  font-family: game-played;
   // font-weight: normal;
   overflow: hidden;
   padding: 0.5rem 1rem 0.125rem;
@@ -222,7 +222,7 @@ $te: cubic-bezier(0.215, 0.61, 0.355, 1);
   $pull: 30%;
 
   .menu__link {
-    font-family: nunito;
+    font-family: game-played;
 
     opacity: 0.25;
     transition-duration: calc($td) * 3;
@@ -239,7 +239,7 @@ $te: cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: translate(0, 0);
 
     &:hover {
-      font-family: nunito;
+      font-family: game-played;
 
       color: $color-hover;
       transition-delay: 0s;

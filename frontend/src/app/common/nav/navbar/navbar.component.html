@@ -1,12 +1,30 @@
 <nav *ngIf="{user: loggedUser$ | async} as loggedObject" class="navbar bg-dark fixed-top"  [ngStyle]="{ 'top' : isNavOpen ? '0' : '-74px' }"> <!-- [ngClass]="{'hidden': isNavbarHidden}" -->
-  <div class="container-fluid justify-content-between px-4">
+  <div class="container-fluid justify-content-between px-4 game-played">
     <a class="navbar-brand active text-white" [routerLink]="['']" (click)="inputSidenav.close()">Quiz</a>
     <div class="d-flex flex-row justify-content-center align-items-center">
       <!-- <app-lang-switcher class="me-4"></app-lang-switcher> -->
       <!-- <div class="navbar-item text-white me-3">Login</div> -->
-      <a *ngIf="!loggedObject.user" class="navbar-item text-white me-3" [routerLink]="['login']" (click)="inputSidenav.close()">Login</a>
-      <a *ngIf="loggedObject.user" class="navbar-item text-white me-3" [routerLink]="['']" (click)="[inputSidenav.close(), logout()]">Logout</a>
-      <a *ngIf="!loggedObject.user" class="navbar-item text-white me-3" [routerLink]="['sign-up']" (click)="inputSidenav.close()">Sign up</a>
+
+      <div *ngIf="!loggedObject.user" class="nav-item content__item mx-3 my-lg-0 h-min-content">
+        <button (click)="inputSidenav.close()" class="button button--anthe" id="selenium__login" [routerLink]="['/login']"
+          data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+          <span class="d-flex flex-row">
+            Login <fa-icon class="login__icon ms-2" [icon]="faRightToBracket"></fa-icon>
+          </span>
+        </button>
+      </div>
+
+      <div *ngIf="loggedObject.user" class="nav-item content__item mx-3 my-lg-0 h-min-content">
+        <button (click)="[inputSidenav.close(), logout()]" class="button button--anthe" id="selenium__login" [routerLink]="['/']"
+          data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+          <span class="d-flex flex-row">
+            Logout <fa-icon class="login__icon ms-2" [icon]="faRightFromBracket"></fa-icon>
+          </span>
+        </button>
+      </div>
+
+      <!-- <a *ngIf="!loggedObject.user" class="navbar-item text-white me-3" [routerLink]="['login']" (click)="inputSidenav.close()">Login</a>
+      <a *ngIf="loggedObject.user" class="navbar-item text-white me-3" [routerLink]="['']" (click)="[inputSidenav.close(), logout()]">Logout</a> -->
       <label for="check">
         <input [checked]="inputSidenavState" type="checkbox" id="check" (click)="inputSidenav.toggle()" />
         <span></span>

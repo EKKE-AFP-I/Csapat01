@@ -1,4 +1,4 @@
-<div class="nav-gap d-flex align-items-center justify-content-center min-vh-100">
+<div class="nav-gap d-flex justify-content-center min-vh-100">
   <main *ngIf="(user$ | async) as user" class="col-10 col-md-8 col-lg-6 col-xl-4">
     <h1 class="mb-4">Sign up</h1>
     <form (ngSubmit)="register(user)" #registerForm="ngForm">
@@ -29,7 +29,7 @@
 
       <div class="d-flex flex-row align-items-center justify-content-between">
         <button [disabled]="registerForm.invalid" type="submit" class="btn btn-primary btn-block">Sign in</button>
-        <small>Haven't signed up yet? <a [routerLink]="['/sign-up']">Sign up!</a></small>
+        <small>Already signed up? <a [routerLink]="['/login']">Login!</a></small>
       </div>
 
     </form>

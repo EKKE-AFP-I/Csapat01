@@ -5,6 +5,8 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { MatSidenav, MatSidenavModule} from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { faDiscord, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { AuthService } from '../../../service/auth.service';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -14,7 +16,8 @@ import { faDiscord, faFacebookF, faInstagram } from '@fortawesome/free-brands-sv
     MatSidenavModule,
     MatButtonModule,
     FontAwesomeModule,
-    RouterModule
+    RouterModule,
+    CommonModule
   ],
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.scss'
@@ -23,9 +26,17 @@ export class SidenavComponent {
 
   @Input() inputSidenavClose!: MatSidenav;
 
+  loggedUser$ = this.authService.loggedUser$;
+
   faFacebook = faFacebookF;
   faInstagram = faInstagram;
   faDiscord = faDiscord;
   faXmark = faXmark;
+
+  constructor(
+    private authService: AuthService,
+    // private router: Router,
+  ) { }
+
 
 }

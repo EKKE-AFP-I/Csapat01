@@ -1,4 +1,4 @@
-<div class="nav-gap d-flex align-items-center justify-content-center min-vh-100">
+<div class="nav-gap d-flex justify-content-center min-vh-100">
   <main *ngIf="(user$ | async) as user" class="col-10 col-md-8 col-lg-6 col-xl-4">
     <h1 class="mb-4">Login</h1>
     <form (ngSubmit)="login(user)" #loginForm="ngForm">
