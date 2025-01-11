@@ -1,23 +1,29 @@
 <div class="nav-gap d-flex align-items-center justify-content-center min-vh-100">
   <main *ngIf="(user$ | async) as user" class="col-10 col-md-8 col-lg-6 col-xl-4">
+    <h1 class="mb-4">Login</h1>
     <form (ngSubmit)="login(user)" #loginForm="ngForm">
       <div class="form-outline mb-4">
-        <input [(ngModel)]="user.username" type="text" id="form2Example1" class="form-control" name="username"/>
+        <input [(ngModel)]="user.username" type="text" id="form2Example1" class="form-control" name="username" required/>
         <label class="form-label" for="form2Example1">Email address</label>
       </div>
 
       <div class="form-outline mb-4">
-        <input [(ngModel)]="user.password" type="password" id="password" class="form-control" name="password"/>
+        <input [(ngModel)]="user.password" type="password" id="password" class="form-control" name="password" required/>
         <label class="form-label" for="password">Password</label>
       </div>
 
-      <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+      <div class="d-flex flex-row align-items-center justify-content-between">
+        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+        <small>Haven't signed up yet? <a [routerLink]="['/sign-up']">Sign up!</a></small>
+      </div>
 
     </form>
-    <section *ngIf="!wasLoginSuccessful">
-      Incorrect username or password!
+    <section *ngIf="!wasLoginSuccessful" class="mt-4">
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error!</strong> Incorrect username or password!
+      </div>
     </section>
-    {{user.username}} | {{user.password}}
+    <!-- {{user.username}} | {{user.password}} -->
   </main>
 </div>
 

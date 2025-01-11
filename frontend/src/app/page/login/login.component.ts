@@ -52,7 +52,7 @@ export class LoginComponent {
             this.authService.loggedUser$.next(userFound);
             localStorage.setItem('authToken', `${user.id}`);
             this.authService.setLoginData(user.id);
-            this.router.navigate(['/sign-up']);
+            this.router.navigate(['/']);
           } else {
             this.wasLoginSuccessful = false;
           }

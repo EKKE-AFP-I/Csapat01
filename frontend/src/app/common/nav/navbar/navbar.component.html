@@ -6,7 +6,7 @@
       <!-- <div class="navbar-item text-white me-3">Login</div> -->
       <a *ngIf="!loggedObject.user" class="navbar-item text-white me-3" [routerLink]="['login']" (click)="inputSidenav.close()">Login</a>
       <a *ngIf="loggedObject.user" class="navbar-item text-white me-3" [routerLink]="['']" (click)="[inputSidenav.close(), logout()]">Logout</a>
-      <a class="navbar-item text-white me-3" [routerLink]="['sign-up']" (click)="inputSidenav.close()">Sign up</a>
+      <a *ngIf="!loggedObject.user" class="navbar-item text-white me-3" [routerLink]="['sign-up']" (click)="inputSidenav.close()">Sign up</a>
       <label for="check">
         <input [checked]="inputSidenavState" type="checkbox" id="check" (click)="inputSidenav.toggle()" />
         <span></span>

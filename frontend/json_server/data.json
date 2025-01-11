@@ -11,6 +11,18 @@
       "username": "admin",
       "password": "admin",
       "role": "admin"
+    },
+    {
+      "id": "",
+      "username": "",
+      "password": "",
+      "role": "user"
+    },
+    {
+      "id": "asd",
+      "username": "asd",
+      "password": "asd",
+      "role": "user"
     }
   ],
   "quiz": [
@@ -59,7 +71,7 @@
       "active": true
     },
     {
-      "id": 0,
+      "id": "0",
       "questionType": "",
       "question": "",
       "answer1": "",
@@ -70,7 +82,7 @@
       "active": true
     },
     {
-      "id": 0,
+      "id": "0",
       "questionType": "",
       "question": "",
       "answer1": "",
@@ -81,7 +93,7 @@
       "active": true
     },
     {
-      "id": 0,
+      "id": "0",
       "questionType": "",
       "question": "",
       "answer1": "",
@@ -92,7 +104,7 @@
       "active": true
     },
     {
-      "id": 0,
+      "id": "0",
       "questionType": "",
       "question": "",
       "answer1": "",
@@ -103,7 +115,7 @@
       "active": true
     },
     {
-      "id": 0,
+      "id": "0",
       "questionType": "",
       "question": "",
       "answer1": "",
@@ -114,7 +126,7 @@
       "active": true
     },
     {
-      "id": 0,
+      "id": "0",
       "questionType": "",
       "question": "",
       "answer1": "",
@@ -125,7 +137,7 @@
       "active": true
     },
     {
-      "id": 0,
+      "id": "0",
       "questionType": "",
       "question": "",
       "answer1": "",
