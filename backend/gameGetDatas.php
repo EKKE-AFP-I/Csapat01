@@ -12,15 +12,15 @@
         $game = execute_ql_list($query, $query_params); 
         return json_encode($game); 
     }
-    function get_games_by_score($game_cnt) { 
-        $query = 'SELECT * FROM games ORDER BY score DESC LIMIT :game_cnt;'; 
-        $query_params = ['game_cnt' => $game_cnt]; 
-        $games = execute_ql_list($query, $query_params); 
-        return json_encode($games);
-    }
     function get_all_games_by_user_id($user_id) { 
         $query = 'SELECT * FROM games WHERE user_id = :user_id;'; 
         $query_params = ['user_id' => $user_id]; 
+        $games = execute_ql_list($query, $query_params); 
+        return json_encode($games);
+    }
+    function get_games_by_score($game_cnt) { 
+        $query = 'SELECT * FROM games ORDER BY score DESC LIMIT :game_cnt;'; 
+        $query_params = ['game_cnt' => $game_cnt]; 
         $games = execute_ql_list($query, $query_params); 
         return json_encode($games);
     }
