@@ -11,6 +11,9 @@
     echo "All questions: <br>";
     echo $all_quiestons;
 
-    function get_game_by_id($id) { 
+    function get_game_by_id($id) {
+        $query = 'SELECT * FROM quiz WHERE id = ' . $id . ';'; 
+        $game = execute_ql_list($query); 
+        return json_encode($game); 
     }
 ?>
