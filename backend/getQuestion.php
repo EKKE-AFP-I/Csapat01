@@ -6,4 +6,8 @@
         $questions = execute_ql_list($query); 
         return json_encode($questions); 
     }
+
+    $all_quiestons = get_all_questions(); 
+    echo "All questions: <br>";
+    echo $all_quiestons;
 ?>
