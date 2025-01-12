@@ -8,30 +8,32 @@
       <div class="answer-buttons d-flex flex-column flex-lg-row col-12 flex-wrap">
         <div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 p-2 p-lg-3">
         <button (click)="selectAnswer(1, quiz.correctAnswer == 1)" class="col-12 p-2 p-lg-3" mat-raised-button
-          [class]="classSuccess1" [disabled]="answerSelected">{{ quiz.answer1 }}</button>
+          [class]="classSuccess1" [disabled]="isAnswerSelected">{{ quiz.answer1 }}</button>
         </div>
         <div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 p-2 p-lg-3">
         <button (click)="selectAnswer(2, quiz.correctAnswer == 2)" class="col-12 p-2 p-lg-3" mat-raised-button
-          [class]="classSuccess2" [disabled]="answerSelected">{{ quiz.answer2 }}</button>
+          [class]="classSuccess2" [disabled]="isAnswerSelected">{{ quiz.answer2 }}</button>
         </div>
         <div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 p-2 p-lg-3">
         <button (click)="selectAnswer(3, quiz.correctAnswer == 3)" class="col-12 p-2 p-lg-3" mat-raised-button
-          [class]="classSuccess3" [disabled]="answerSelected">{{ quiz.answer3 }}</button>
+          [class]="classSuccess3" [disabled]="isAnswerSelected">{{ quiz.answer3 }}</button>
         </div>
         <div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 p-2 p-lg-3">
         <button (click)="selectAnswer(4, quiz.correctAnswer == 4)" class="col-12 p-2 p-lg-3" mat-raised-button
-          [class]="classSuccess4" [disabled]="answerSelected">{{ quiz.answer4 }}</button>
+          [class]="classSuccess4" [disabled]="isAnswerSelected">{{ quiz.answer4 }}</button>
         </div>
         <!-- <button (click)="selectAnswer(quiz.correctAnswer == 2)" class="answer-button col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6" mat-raised-button>{{ quiz.answer2 }}</button>
         <button (click)="selectAnswer(quiz.correctAnswer == 3)" class="answer-button col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6" mat-raised-button>{{ quiz.answer3 }}</button>
         <button (click)="selectAnswer(quiz.correctAnswer == 4)" class="answer-button col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6" mat-raised-button>{{ quiz.answer4 }}</button> -->
       </div>
-      <div *ngIf="success == 1" class="card-footer">
+      <h3 class="question game-played text-white mt-4">[{{ currentQuizId+1 }}/{{ questionCount }}]</h3>
+
+      <!-- <div *ngIf="success == 1" class="card-footer">
         YEEY! Correct answer!
       </div>
       <div *ngIf="success == -1" class="card-footer">
         Oh noo! Wrong answer!
-      </div>
+      </div> -->
 
 
     </div>

@@ -1,6 +1,6 @@
 <nav *ngIf="{user: loggedUser$ | async} as loggedObject" class="navbar bg-dark fixed-top"  [ngStyle]="{ 'top' : isNavOpen ? '0' : '-74px' }"> <!-- [ngClass]="{'hidden': isNavbarHidden}" -->
   <div class="container-fluid justify-content-between px-4 game-played">
-    <a class="navbar-brand active text-white" [routerLink]="['']" (click)="inputSidenav.close()">Quiz</a>
+    <a class="navbar-brand active text-white" [routerLink]="['question']" (click)="inputSidenav.close()">Quiz</a>
     <div class="d-flex flex-row justify-content-center align-items-center">
       <!-- <app-lang-switcher class="me-4"></app-lang-switcher> -->
       <!-- <div class="navbar-item text-white me-3">Login</div> -->
