@@ -1,43 +1,45 @@
 <div class="background"></div>
 <div class="nav-gap d-flex justify-content-center min-vh-100">
   <main *ngIf="(user$ | async) as user" class="col-10 col-md-8 col-lg-6 col-xl-4">
-    <h1 class="mb-4">Sign up</h1>
-    <form (ngSubmit)="register(user)" #registerForm="ngForm">
-      <div class="form-group mb-4">
-        <input [(ngModel)]="user.username" type="text" id="form2Example1" class="form-control" name="username" required/>
-        <label class="form-label" for="form2Example1">Email address</label>
-      </div>
+    <div class="bg-darken-wrap text-white">
+      <h1 class="game-played text-shadow mb-4">Sign up</h1>
+      <form (ngSubmit)="register(user)" #registerForm="ngForm">
+        <div class="form-group mb-4">
+          <input [(ngModel)]="user.username" type="text" id="form2Example1" class="form-control" name="username" required/>
+          <label class="form-label" for="form2Example1">Email address</label>
+        </div>
 
-      <div class="form-group mb-4">
-        <input [(ngModel)]="user.password" type="password" id="password" class="form-control" name="password" required/>
-        <label class="form-label" for="password">Password</label>
-      </div>
+        <div class="form-group mb-4">
+          <input [(ngModel)]="user.password" type="password" id="password" class="form-control" name="password" required/>
+          <label class="form-label" for="password">Password</label>
+        </div>
 
-      <div class="form-group mb-4">
-        <input [(ngModel)]="passwordAgain" type="password" id="password-again" class="form-control" name="password-again" required/>
-        <label class="form-label" for="password-again">Password again</label>
-      </div>
+        <div class="form-group mb-4">
+          <input [(ngModel)]="passwordAgain" type="password" id="password-again" class="form-control" name="password-again" required/>
+          <label class="form-label" for="password-again">Password again</label>
+        </div>
 
-      <div class="form-check mb-4">
-        <input [(ngModel)]="isUserAdmin" type="checkbox" class="form-check-input" name="role"/>
-        <label class="form-check-label" for="role">Check if you want to register as an admin</label>
-      </div>
+        <div class="form-check mb-4">
+          <input [(ngModel)]="isUserAdmin" type="checkbox" class="form-check-input" name="role"/>
+          <label class="form-check-label" for="role">Check if you want to register as an admin</label>
+        </div>
 
-      <div *ngIf="isUserAdmin" class="form-group mb-4">
-        <input [(ngModel)]="enteredAdminCode" type="password" id="admin-code" class="form-control" name="admin-code"/>
-        <label class="form-label" for="admin-code">Enter the admin code</label>
-      </div>
+        <div *ngIf="isUserAdmin" class="form-group mb-4">
+          <input [(ngModel)]="enteredAdminCode" type="password" id="admin-code" class="form-control" name="admin-code"/>
+          <label class="form-label" for="admin-code">Enter the admin code</label>
+        </div>
 
-      <div class="d-flex flex-row align-items-center justify-content-between">
-        <button [disabled]="registerForm.invalid" type="submit" class="btn btn-primary btn-block">Sign in</button>
-        <small>Already signed up? <a [routerLink]="['/login']">Login!</a></small>
-      </div>
+        <div class="d-flex flex-row align-items-center justify-content-between">
+          <button [disabled]="registerForm.invalid" type="submit" class="btn btn-primary btn-block">Sign in</button>
+          <small>Already signed up? <a [routerLink]="['/login']">Login!</a></small>
+        </div>
 
-    </form>
-    <section *ngIf="errMessage" class="mt-4">
-      <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Error!</strong> {{ errMessage }}
-      </div>
-    </section>
+      </form>
+      <section *ngIf="errMessage" class="mt-4">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Error!</strong> {{ errMessage }}
+        </div>
+      </section>
+    </div>
   </main>
 </div>

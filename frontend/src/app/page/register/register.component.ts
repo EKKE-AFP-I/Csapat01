@@ -48,11 +48,21 @@ export class RegisterComponent {
   ) { }
 
   register(user: User): void {
+    let wasSomethingWrong = false;
+
     if (user.password !== this.passwordAgain) {
+      wasSomethingWrong = true;
       this.errMessage = 'Two passwords are not the same.';
-    } else if (this.isUserAdmin && this.enteredAdminCode == this.adminCode) {
-      this.errMessage = 'Wrong admin code.';
-    } else {
+    }
+
+    if (this.isUserAdmin) {
+      if (this.enteredAdminCode != this.adminCode) {
+        wasSomethingWrong = true;
+        this.errMessage = 'Wrong admin code.';
+      }
+    }
+
+    if (user.password === this.passwordAgain && !wasSomethingWrong){
       user.id = user.username;
       this.isUserAdmin ? user.role = 'admin' : user.role = 'user';
       this.userService.create(user)

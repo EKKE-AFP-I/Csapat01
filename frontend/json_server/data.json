@@ -23,6 +23,24 @@
       "username": "asd",
       "password": "asd",
       "role": "user"
+    },
+    {
+      "id": "a",
+      "username": "a",
+      "password": "asd",
+      "role": "user"
+    },
+    {
+      "id": "asd123",
+      "username": "asd123",
+      "password": "asd",
+      "role": "user"
+    },
+    {
+      "id": "asdasd",
+      "username": "asdasd",
+      "password": "asd",
+      "role": "admin"
     }
   ],
   "quiz": [
