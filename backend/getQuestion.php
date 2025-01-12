@@ -10,4 +10,7 @@
     $all_quiestons = get_all_questions(); 
     echo "All questions: <br>";
     echo $all_quiestons;
+
+    function get_game_by_id($id) { 
+    }
 ?>
