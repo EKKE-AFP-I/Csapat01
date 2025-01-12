@@ -5,6 +5,7 @@ import { AdminHomeComponent } from './page/admin-home/admin-home.component';
 import { AdminEditComponent } from './page/admin-edit/admin-edit.component';
 import { LoginComponent } from './page/login/login.component';
 import { RegisterComponent } from './page/register/register.component';
+import { ResultComponent } from './page/result/result.component';
 
 export const routes: Routes = [
   {
@@ -26,6 +27,11 @@ export const routes: Routes = [
     path: 'question',
     title: 'Question',
     component: QuestionComponent,
+  },
+  {
+    path: 'result',
+    title: 'Result',
+    component: ResultComponent,
   },
   {
     path: 'admin-home',
