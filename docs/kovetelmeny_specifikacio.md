@@ -1,7 +1,7 @@
 ## Követelmény  specifikáció
 
 # 1. Áttekintés
-
+A projekt célja egy webalapú, interaktív kvízjáték fejlesztése, amely Európa földrajzi, kulturális és történelmi ismereteit játékos formában közvetíti. A felhasználók kérdések megválaszolásával "foglalhatják el" a térkép részeit. A kérdések több kategóriába sorolhatók (pl. földrajz, történelem). A fejlesztéshez modern frontend és backend technológiákat alkalmazunk, a felhasználói élményt interaktív térképes megjelenítés és eredménykövetés gazdagítja.
 
 # 2. Jelenlegi helyzet
 
