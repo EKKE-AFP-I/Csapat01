@@ -6,6 +6,12 @@ A projekt célja egy webalapú, interaktív kvízjáték fejlesztése, amely Eur
 # 2. Jelenlegi helyzet
 A jelenlegi oktatási és szórakoztató platformok többsége nem kínál interaktív, játékos tanulási lehetőséget Európa földrajzának és kultúrájának megismerésére. Bár vannak hagyományos kvízoldalak, ezek általában statikusak, nem ösztönöznek hosszabb távú részvételre, és nem nyújtanak vizuálisan motiváló élményt.
 
+A tanulók és játékosok számára hiányzik egy olyan alkalmazás, amely:
+* Játékos tanulást biztosít: Az ismeretek megszerzése szórakoztató és interaktív módon történhet.
+* Interaktív térképes megoldást kínál: Az európai országok földrajzának, kultúrájának és történelmének megértése térképes vizualizációval könnyíthető meg.
+* Különböző szintű tudást céloz meg: Kezdőktől haladókig mindenki számára releváns kihívásokat nyújt.
+* Motivációt teremt: A játékosok eredményeinek követése, valamint a térkép "elfoglalása" ösztönöz a folytatásra.
+
 # 3. Vágyálom rendszer
 
 
