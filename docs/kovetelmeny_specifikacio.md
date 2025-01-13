@@ -18,7 +18,15 @@ Terv a közeljövőben: az eredmények tárolásával a felhasználók összehas
 A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, hogy az admin fiókkal rendelkező felhasználók új kérdéseket töltsenek fel vagy módosítsanak. A frontendet Angular, a backendet PHP technológiával valósítottuk meg, így biztosítva a gyors és megbízható működést. A felhasználói szintek közötti különbségek is jól kezelhetők: az alapfelhasználók kizárólag játszhatnak, míg az adminok tartalmat is kezelhetnek.
 
 # 4. Rendszerre vonatkozó törvények, szabályok, ajánlások
+* AZ EURÓPAI PARLAMENT ÉS A TANÁCS (EU) 2016/679 RENDELETE (GDPR): A természetes személyek adatainak kezelése tekintetében történő védelem és az ilyen adatok szabad áramlása érdekében.
 
+* 2011. évi CXII. törvény az információs önrendelkezési jogról és az információszabadságról (Info tv.): Ez a törvény a GDPR magyarországi kiegészítő szabályozása, és az adatkezelési tevékenységek átláthatóságát, jogszerűségét biztosítja.
+
+* 2001/29/EK irányelv: Az információs társadalomban a szerzői és szomszédos jogok egyes vonatkozásainak összehangolása.
+
+* 2018. évi XXXVIII. törvény – Az Infotv. módosítása: Ez a törvény az Európai Unió adatvédelmi reformjával összefüggésben módosította az Infotv.-t, hogy összhangba hozza a magyar jogot a GDPR rendelkezéseivel.
+
+* ISO/IEC 27001: Az információbiztonsági irányítási rendszer követelményei.
 
 # 5. Jelenlegi üzleti folyamatok modellje
 
