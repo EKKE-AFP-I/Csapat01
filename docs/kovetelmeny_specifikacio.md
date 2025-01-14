@@ -50,6 +50,7 @@ A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, ho
 
 1. Eredmények és statisztikák:
 - A játék végén hogyan történik az eredmények kiszámítása és megjelenítése.
+- Hogyan érhetik el a játékosok a statisztikáikat és eredményeiket.
 
 # 7. Követelmény lista
 ID|Verzió|Név|Kifejtés
