@@ -29,10 +29,6 @@ A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, ho
 * ISO/IEC 27001: Az információbiztonsági irányítási rendszer követelményei.
 
 # 5. Jelenlegi üzleti folyamatok modellje
-
-
-# 6. Igényelt üzleti folyamatok
-
 1. Bevezetés:
 - Rövid áttekintés a játék céljáról és jelenlegi állapotáról.
 
@@ -55,6 +51,10 @@ A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, ho
 1. Értesítések és kommunikáció:
 - Hogyan kapnak értesítéseket a játékosok (például e-mailben vagy alkalmazáson belüli üzenetben).
 - Ügyfélszolgálati folyamatok leírása.
+
+# 6. Igényelt üzleti folyamatok
+
+
 
 # 7. Követelmény lista
 ID|Verzió|Név|Kifejtés
