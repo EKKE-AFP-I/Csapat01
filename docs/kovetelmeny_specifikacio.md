@@ -33,6 +33,9 @@ A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, ho
 
 # 6. Igényelt üzleti folyamatok
 
+1. Bevezetés:
+- Rövid áttekintés a játék céljáról és jelenlegi állapotáról.
+
 
 # 7. Követelmény lista
 ID|Verzió|Név|Kifejtés
