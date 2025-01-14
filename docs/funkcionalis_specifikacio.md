@@ -7,6 +7,30 @@ Célunk az, hogy a rendszer platformfüggetlen legyen, ezáltal hozzáférhető 
 
 # 2. Használati esetek
 
+Felhasználók: 
+
+* Vendég felhasználók:
+- Regisztráció nélkül próbálják ki a játékot, de eredményeiket nem menti a rendszer.
+* Regisztrált felhasználók:
+- Személyre szabott profil, eredmények mentése, fejlődés nyomon követése.
+* Adminisztrátorok:
+- Felügyelik a rendszer működését, kezelik a kérdéseket és témákat.
+
+Használati esetek:
+
+1. Bejelentkezés:
+* A felhasználók regisztrálhatnak vagy bejelentkezhetnek email-címük és jelszavuk segítségével.
+* Az adminisztrátorok kezelhetik a kérdéseket (létrehozás, módosítás, törlés).
+
+1. Játékmenet:
+* A felhasználó egy véletlenszerű kérdéseket kap, majd kérdésekre válaszol.
+* Helyes válasz esetén elfoglal egy országot a térképen és pontot kap.
+* Nehézségi szintek biztosítva vannak a tanulás támogatására.
+
+1. Eredmények kezelése:
+* A regisztrált felhasználók egy nyilvános táblázaton nyomon követhetik a teljesítésüket. -feljesztés alatt-
+* Az adminisztrátorok statisztikákat nézhetnek az aktív felhasználókról és új kérdéseket hozhatnak létre.
+
 
 # 3. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 
