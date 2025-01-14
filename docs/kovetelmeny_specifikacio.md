@@ -36,6 +36,8 @@ A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, ho
 1. Bevezetés:
 - Rövid áttekintés a játék céljáról és jelenlegi állapotáról.
 
+1. Játékosok regisztrációja és bejelentkezése:
+- A játékosok hogyan regisztrálnak és lépnek be a rendszerbe.
 
 # 7. Követelmény lista
 ID|Verzió|Név|Kifejtés
