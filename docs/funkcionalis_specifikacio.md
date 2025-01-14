@@ -33,7 +33,15 @@ Használati esetek:
 
 
 # 3. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
+- K01, K02: Az alkalmazást úgy hozzuk létre, hogy tartalmazza a bejelentkezés és regisztráció funkciókat. Ezek lehetővé teszik, hogy a felhasználók email és jelszó megadásával belépjenek, vagy új fiókot hozzanak létre. Helytelen adatok esetén a rendszer hibaüzenetet jelenít meg.
 
+- K03: Különböző jogosultsági szinteket biztosítunk: az adminisztrátorok teljes körű hozzáférést kapnak a rendszer funkcióihoz, míg a játékosok csak a saját profiljukhoz és játék funkciókhoz férnek hozzá.
+
+- K04: Az adminisztrátorok számára kialakítunk egy dedikált felületet, ahol kezelhetik a felhasználókat, statisztikákat tekinthetnek meg, és módosíthatják a rendszer adatait.
+
+- K05, K06: A játékosok számára többkérdéses kvízek állnak rendelkezésre, amelyeket a rendszer automatikusan értékel. A kvíz a bal felső sarokban lévő ikonból indítható el.
+
+- K07, K08: Az adminisztrátorok új kérdéseket hozhatnak létre vagy meglévő kérdéseket módosíthatnak az admin felületen, ezzel biztosítva a tartalom folyamatos bővítését és karbantartását.
 
 # 4. Képernyő tervek
 
