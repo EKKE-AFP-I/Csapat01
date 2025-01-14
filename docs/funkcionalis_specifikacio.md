@@ -43,7 +43,7 @@ Célunk az, hogy a rendszer platformfüggetlen legyen, ezáltal hozzáférhető 
 - K07, K08: Az adminisztrátorok új kérdéseket hozhatnak létre vagy meglévő kérdéseket módosíthatnak az admin felületen, ezzel biztosítva a tartalom folyamatos bővítését és karbantartását.
 
 # 4. Képernyő tervek
-
+A képernyőképeket a screen_saves mappában lehet elérni, ahol a webodal prototípusának képei elérhetőek. Ezek a mappából letölthetőek. A prototípus nem fed le mindent, ami a forgatókönyvben le van írva, csak demonstatív jelleggel találhatóak. Hibaüzenettel rendelkező képek is meglelhetőek.
 
 # 5. Forgatókönyv
 A kezdőlapon megjelenik minden felhasználónak először, található egy PLAY gomb és egy navigációs sáv. A navigációs sávban megtalálható bal oldalt egy QUIZ ikon, jobb oldalt LOGIN és MENÜ gomb. Ezek a bejelentkezés előtt minden esetben megjelennek.  
