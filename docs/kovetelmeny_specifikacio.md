@@ -38,6 +38,11 @@ A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, ho
 
 1. Játékosok regisztrációja és bejelentkezése:
 - A játékosok hogyan regisztrálnak és lépnek be a rendszerbe.
+- Felhasználói hitelesítési folyamatok leírása.
+
+1. Játék folyamat:
+- A játék menete: kérdések megjelenítése, válaszidő, pontozási rendszer.
+- Szabályok és mechanizmusok ismertetése (például hogyan működnek a bónusz kérdések vagy a tippek).
 
 # 7. Követelmény lista
 ID|Verzió|Név|Kifejtés
