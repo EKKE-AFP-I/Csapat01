@@ -46,7 +46,20 @@ Célunk az, hogy a rendszer platformfüggetlen legyen, ezáltal hozzáférhető 
 
 
 # 5. Forgatókönyv
+A kezdőlapon megjelenik minden felhasználónak először, található egy PLAY gomb és egy navigációs sáv. A navigációs sávban megtalálható bal oldalt egy QUIZ ikon, jobb oldalt LOGIN és MENÜ gomb. Ezek a bejelentkezés előtt minden esetben megjelennek.  
+* A PLAY gombra kattintáskor elindul a játék bejelentkezéstől függetlenül.
+* Az ikonra kattintáskor elindul a játék bejelentkezéstől függetlenül.
+* A LOGIN gombot választva lehet belépni felhasználóként, illetve adminisztrátorként a rendszerbe. Hibás felhasználó név vagy jelszó megadása esetén újból meg kell adni az adatokat. Amennyiben még nincs felhasználónk, itt tudunk átlépni a regisztrációs oldalra.
+* A regisztációs oldalon meg kell adnunk egy általunk használt emailt, illetve kétszer a jelszót. Amennyiben még nincs ilyen felhasználó és a két jelszó megegyezik, akkor a rendszer regisztált minket és visszadob a belejentkezési fülre. Hiba esetén értesít megfelelő hibaüzenettel.
+* A MENÜ gomb megnyomásakor !!!!!!!
 
+Sikeres belépés esetén a LOGIN gomb eltűnik, és egy LOGOUT gomb lesz helyette, ahol bármikor ki tudunk lépni a felhasználóból.
+
+Amennyiben adminisztrátor felhasználóként lép be a weboldalra, a MENÜ gomb megnyomása esetén elérhető az admin felület, ahol kérdéseket tudunk létrehozni, módosítani és törölni.
+
+
+Játék:
+* Amennyiben elindítottunk egy játékot, a rendszer átdob minket egy random kérdésre, amit meg kell nekünk időre válaszolni. Amennyiben sikeresen megtettük, kapunk érte pontot. Minden kérdésre helyesen válaszolás esetén teljesítjük az adott kvízt, ezzel későbbiekben elfoglaljuk az első területet a térképen.
 
 # 6. Funkció–követelmény megfeleltetés
 ID|Verzió|Név|Kifejtés
