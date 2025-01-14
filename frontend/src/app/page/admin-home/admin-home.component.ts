@@ -31,4 +31,8 @@ export class AdminHomeComponent {
     private router: Router,
   ) {  }
 
+  // constructor(
+  //   private quizService: QuizService,
+  //   private router: Router,
+  // ) {  }
 }

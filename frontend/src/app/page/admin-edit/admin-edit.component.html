@@ -153,6 +153,21 @@
   </div>
 </div>
 
+        <!-- <div class=" mt-3">
+          <div class="d-flex justify-content-between">
+            <label for="">questionType
+              <button (click)="consoleWrite(quizForm)" type="button">Log</button>
+            </label>
+            <div [hidden]="quizForm.controls['type'].valid" class="error-message mt-1">
+              <small>
+                A típus 2-20 karakter hosszú lehet!
+              </small>
+            </div>
+          </div>
+          <input name="type" [(ngModel)]="quiz.questionType" type="text" class="form-control"
+            pattern="^.{2,20}$" required>
+        </div> -->
+
 <fa-icon [icon]="faSave"></fa-icon>
 <fa-icon [icon]="faSave"></fa-icon>
 <fa-icon [icon]="faSave"></fa-icon>
@@ -161,3 +176,4 @@
 <fa-icon [icon]="faSave"></fa-icon>
 <fa-icon [icon]="faSave"></fa-icon>
 <fa-icon [icon]="faSave"></fa-icon>
+

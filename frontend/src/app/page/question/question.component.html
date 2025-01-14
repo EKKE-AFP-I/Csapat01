@@ -60,3 +60,24 @@
     </div> -->
   </div>
 </main>
+<!-- <div *ngFor="let quiz of list" class="card" style="width: 18rem;"> -->
+<!-- <div *ngIf="list[0] as quiz" class="card" style="width: 18rem;">
+  <div class="card-header">
+    {{ quiz.id }}
+  </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{ quiz.question }}</li>
+      <button (click)="selectAnswer(quiz.correctAnswer == 1)" mat-raised-button>{{ quiz.answer1 }}</button>
+      <button (click)="selectAnswer(quiz.correctAnswer == 2)" mat-raised-button>{{ quiz.answer2 }}</button>
+      <button (click)="selectAnswer(quiz.correctAnswer == 3)" mat-raised-button>{{ quiz.answer3 }}</button>
+      <button (click)="selectAnswer(quiz.correctAnswer == 4)" mat-raised-button>{{ quiz.answer4 }}</button>
+      <li class="list-group-item">{{ quiz.correctAnswer }}</li>
+      <li class="list-group-item">{{ quiz.active }}</li>
+    </ul>
+  <div *ngIf="success == 1" class="card-footer">
+    YEEY! Correct answer!
+  </div>
+  <div *ngIf="success == -1" class="card-footer">
+    Oh noo! Wrong answer!
+  </div>
+</div> -->

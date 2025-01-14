@@ -41,6 +41,12 @@
       "username": "asdasd",
       "password": "asd",
       "role": "admin"
+    },
+    {
+      "id": "a",
+      "username": "a",
+      "password": "asd",
+      "role": "admin"
     }
   ],
   "quiz": [
