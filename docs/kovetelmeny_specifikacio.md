@@ -52,6 +52,10 @@ A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, ho
 - A játék végén hogyan történik az eredmények kiszámítása és megjelenítése.
 - Hogyan érhetik el a játékosok a statisztikáikat és eredményeiket.
 
+1. Értesítések és kommunikáció:
+- Hogyan kapnak értesítéseket a játékosok (például e-mailben vagy alkalmazáson belüli üzenetben).
+- Ügyfélszolgálati folyamatok leírása.
+
 # 7. Követelmény lista
 ID|Verzió|Név|Kifejtés
 --|------|---|--------
