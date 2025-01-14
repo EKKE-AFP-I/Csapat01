@@ -16,3 +16,13 @@
 
 
 # 6. Funkció–követelmény megfeleltetés
+ID|Verzió|Név|Kifejtés
+--|------|---|--------
+K01|V1.0|Bejelentkezési felület|A játékosok email címük és jelszavuk segítségével bejelentkezhetnek. Helytelen adatok esetén hibaüzenet jelenik meg.
+K02|V1.0|Regisztráció|Új játékos regisztrációja felhasználónév, email cím és jelszó megadásával. Hiányos vagy nem megfelelő adatok esetén értesítés jelenik meg.
+K03|V1.0|Jogosultsági szintek|- Admin: Felhasználók kezelése, játék statisztikák, és rendszermódosítások. - Játékos: Játék indítása, pontszámok megtekintése, toplista elérése.
+K04|V1.0|Admin felület|Az adminisztrátor számára elérhető felület.
+K05|V1.0|Kvíz|A játék többkérdéses kvízekből áll, ahol a felhasználó a helyes válaszok függvényében kap pontot.
+K06|V1.0|Kvíz indítás|Bal felső sarokba az ikonba kattintva előhozható és indítható a játék.
+K07|V1.0|Kvíz kérdés létrehozás|Admin felhasználóként az admin felületen új kérdés hozható létre.
+K08|V1.0|Kvíz kérdés módosítása|Admin felhasználóként az admin felületen módosíthatóak a kérdések és válaszok.
