@@ -11,3 +11,9 @@
         $query_params = ['id' => $id]; 
         execute_dml($query, $query_params); 
     }
+
+    function delete_user_by_role($role) { 
+        $query = 'DELETE FROM users WHERE role = :role;'; 
+        $query_params = ['role' => $role]; 
+        execute_dml($query, $query_params); 
+    }
