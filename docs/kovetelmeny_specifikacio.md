@@ -53,8 +53,11 @@ A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, ho
 - Ügyfélszolgálati folyamatok leírása.
 
 # 6. Igényelt üzleti folyamatok
-
-
+A játékban regisztráció szükséges a részvételhez. Adminisztrátorként lehetőség van admin kóddal regisztrálni, míg anélkül csak átlagos felhasználóként.
+A bejelentkezés felhasználónév és jelszó párossal történik, amely természetesen hitelesítve van.
+Az adminisztrátorok új kvíz kérdéseket és válaszlehetőségeket rögzíthetnek, valamint meglévőket módosíthatnak vagy törölhetnek.
+Minden bejelentkezett felhasználó játszhat a játékkal, ahol egy kérdést és négy válaszlehetőséget kapnak. A helyes válaszért 1 pont jár, a helytelenért pedig 0 pont.
+Tároljuk a játékokonkénti eredményeket, valamint a felhasználók összesített eredményeit, azonban jelenleg még nincs lehetőség ezek kilistázására.
 
 # 7. Követelmény lista
 ID|Verzió|Név|Kifejtés
