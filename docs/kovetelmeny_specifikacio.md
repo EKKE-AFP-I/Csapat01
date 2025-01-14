@@ -44,6 +44,11 @@ A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, ho
 - A játék menete: kérdések megjelenítése, válaszidő, pontozási rendszer.
 - Szabályok és mechanizmusok ismertetése (például hogyan működnek a bónusz kérdések vagy a tippek).
 
+1. Adatkezelés:
+- A játékosok által megadott adatok tárolása és kezelése.
+- Adatvédelemi irányelvek és biztonsági intézkedések bemutatása.
+
+
 # 7. Követelmény lista
 ID|Verzió|Név|Kifejtés
 --|------|---|--------
