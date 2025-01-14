@@ -48,6 +48,8 @@ A rendszer tartalmaz egy adminisztrátori felületet, amely lehetővé teszi, ho
 - A játékosok által megadott adatok tárolása és kezelése.
 - Adatvédelemi irányelvek és biztonsági intézkedések bemutatása.
 
+1. Eredmények és statisztikák:
+- A játék végén hogyan történik az eredmények kiszámítása és megjelenítése.
 
 # 7. Követelmény lista
 ID|Verzió|Név|Kifejtés
