@@ -39,7 +39,7 @@ export const routes: Routes = [
     component: AdminHomeComponent,
   },
   {
-    path: 'admin-edit',
+    path: 'admin-edit/:id',
     title: 'Admin Editor',
     component: AdminEditComponent,
   },

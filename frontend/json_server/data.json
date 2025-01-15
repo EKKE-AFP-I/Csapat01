@@ -59,7 +59,7 @@
       "answer3": "42",
       "answer4": "42",
       "correctAnswer": 1,
-      "active": true
+      "active": false
     },
     {
       "id": "2",
