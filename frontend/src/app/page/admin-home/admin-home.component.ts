@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { Router, RouterModule } from '@angular/router';
 import { QuizService } from '../../service/quiz.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faSave } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck, faCircleXmark, faPenToSquare, faSave, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-admin-home',
@@ -24,6 +24,10 @@ export class AdminHomeComponent {
 
   list$ = this.quizService.getAll();
 
+  faCircleCheck = faCircleCheck;
+  faCircleXmark = faCircleXmark;
+  faPenToSquare = faPenToSquare;
+  faTrashCan = faTrashCan;
   faSave = faSave;
 
   constructor(
@@ -35,4 +39,16 @@ export class AdminHomeComponent {
   //   private quizService: QuizService,
   //   private router: Router,
   // ) {  }
+
+  deleteQuiz(id: string) {
+    this.quizService.remove(id).subscribe({
+      error: (err) => console.log('Error: ', err),
+      complete: () => {
+        this.list$ = this.quizService.getAll();
+      }
+    });
+
+
+  }
+
 }

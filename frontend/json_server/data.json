@@ -64,7 +64,7 @@
     {
       "id": "2",
       "questionType": "asd",
-      "question": "asd",
+      "question": "asd aidfghjk akjhfd kéjashfd élkj lakjsdflkj ékljh léasjkfjlk",
       "answer1": "asdasd",
       "answer2": "asd",
       "answer3": "asdads",
@@ -81,39 +81,6 @@
       "answer3": "a",
       "answer4": "",
       "correctAnswer": 1,
-      "active": true
-    },
-    {
-      "id": "0",
-      "questionType": "",
-      "question": "",
-      "answer1": "",
-      "answer2": "",
-      "answer3": "",
-      "answer4": "",
-      "correctAnswer": 0,
-      "active": true
-    },
-    {
-      "id": "0",
-      "questionType": "",
-      "question": "",
-      "answer1": "",
-      "answer2": "",
-      "answer3": "",
-      "answer4": "",
-      "correctAnswer": 0,
-      "active": true
-    },
-    {
-      "id": "0",
-      "questionType": "",
-      "question": "",
-      "answer1": "",
-      "answer2": "",
-      "answer3": "",
-      "answer4": "",
-      "correctAnswer": 0,
       "active": true
     },
     {

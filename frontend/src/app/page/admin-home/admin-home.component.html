@@ -1,38 +1,36 @@
 <div class="background"></div>
 <div class="nav-gap">
-  <div class="d-flex flex-column justify-content-center align-items-center min-vh-100">
-    <div *ngIf="list$ | async as list" class="d-flex flex-row flex-wrap offset-1 align-items-center justify-content-center">
-      <div *ngFor="let quiz of list" class="card " style="width: 18rem;">
+  <div class="d-flex flex-column align-items-center min-vh-100">
+    <div *ngIf="list$ | async as list" class="container d-flex flex-row flex-wrap align-items-center justify-content-center mt-5">
+      <div *ngFor="let quiz of list" class="card m-2 col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column justify-content-between" style="width: 18rem; height: 28rem;">
         <div class="card-header">
           {{ quiz.id }}
         </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">{{ quiz.question }}</li>
+            <li class="list-group-item"><small>{{ quiz.question }}</small> </li>
             <button mat-raised-button>{{ quiz.answer1 }}</button>
             <button mat-raised-button>{{ quiz.answer2 }}</button>
             <button mat-raised-button>{{ quiz.answer3 }}</button>
             <button mat-raised-button>{{ quiz.answer4 }}</button>
-            <li class="list-group-item">{{ quiz.correctAnswer }}</li>
-            <li class="list-group-item">{{ quiz.active }}</li>
+            <li class="list-group-item"><small>Correct answer: {{ quiz.correctAnswer }}</small></li>
+            <li class="list-group-item"><small>Active: </small>
+              <fa-icon *ngIf="quiz.active" class="text-green" [icon]="faCircleCheck"></fa-icon>
+              <fa-icon *ngIf="!quiz.active" class="text-red" [icon]="faCircleXmark"></fa-icon>
+            </li>
+            <li class="card-footer d-flex flex-row justify-content-between col-12">
+              <button class="btn" [routerLink]="['/admin-edit']">
+                <fa-icon class="text-green" [icon]="faPenToSquare"></fa-icon>
+              </button>
+              <button class="btn" (click)="deleteQuiz(quiz.id)">
+                <fa-icon class="text-red" [icon]="faTrashCan"></fa-icon>
+              </button>
+            </li>
           </ul>
       </div>
-      <button class="display-1" [routerLink]="['/admin-edit']" mat-raised-button>+</button>
+      <div class="card m-2 col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+        <button class="display-1" [routerLink]="['/admin-edit']" mat-raised-button>+</button>
+      </div>
+
     </div>
   </div>
 </div>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
-<fa-icon [icon]="faSave"></fa-icon>
