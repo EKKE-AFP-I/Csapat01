@@ -54,7 +54,7 @@ export class AdminHomeComponent {
     this.router.navigate([`admin-edit/${quiz.id}`]);
   }
 
-  deleteQuiz(id: string) {
+  deleteQuiz(id: string): void {
     this.quizService.remove(id).subscribe({
       error: (err) => console.log('Error: ', err),
       complete: () => {

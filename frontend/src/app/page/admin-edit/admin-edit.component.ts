@@ -49,15 +49,23 @@ export class AdminEditComponent {
 
   onUpdate(quiz: Quiz): void {
     this.clicked = true;
-    if (quiz.id === "0") {
-      this.quizService.create(quiz)
+    if (quiz.id === '') {
+      this.quizService.getAll()
       .subscribe({
-        error: (error) => console.log(error), //this.onDanger('We could not create the shop item.<br>Please try again later!', 'Something went wrong.')
-        complete: () => {
-          this.router.navigate(['admin-home']);
+        error: (error) => console.log(error),
+        next: (quizes) => {
+          quiz.id = (parseInt(quizes[quizes.length - 1].id) + 1).toString();
+          this.quizService.create(quiz)
+          .subscribe({
+            error: (error) => console.log(error), //this.onDanger('We could not create the shop item.<br>Please try again later!', 'Something went wrong.')
+            complete: () => {
+              this.router.navigate(['admin-home']);
+              // this.onSuccess('admin-home item created.');
+            }
+          });
           // this.onSuccess('admin-home item created.');
         }
-      });
+      })
     } else {
       this.quizService.update(quiz)
       .subscribe({

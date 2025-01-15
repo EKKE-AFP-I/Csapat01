@@ -1,5 +1,5 @@
 export class Quiz {
-  id: string = "";
+  id: string = '';
   questionType: string = '';
   question: string = '';
   answer1: string = '';

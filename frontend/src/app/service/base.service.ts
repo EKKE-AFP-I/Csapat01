@@ -19,7 +19,7 @@ export class BaseService<T extends { id?: string }> {
     return this.http.get<T[]>(`${this.apiUrl}${this.entity}`);
   }
 
-  get(id: string): Observable<T> {
+  get(id: any): Observable<T> {
     return this.http.get<T>(`${this.apiUrl}${this.entity}/${id}`);
   }
 
@@ -31,7 +31,7 @@ export class BaseService<T extends { id?: string }> {
     return this.http.patch<T>(`${this.apiUrl}${this.entity}/${entity.id}`, entity);
   }
 
-  remove(id: string): Observable<T> {
+  remove(id: any): Observable<T> {
     return this.http.delete<T>(`${this.apiUrl}${this.entity}/${id}`);
   }
 
