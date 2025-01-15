@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { Router, RouterModule } from '@angular/router';
 import { QuizService } from '../../service/quiz.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCircleCheck, faCircleXmark, faPenToSquare, faSave, faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck, faCircleXmark, faPenToSquare, faSave, faSquarePlus, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-admin-home',
@@ -28,6 +28,7 @@ export class AdminHomeComponent {
   faCircleXmark = faCircleXmark;
   faPenToSquare = faPenToSquare;
   faTrashCan = faTrashCan;
+  faSquarePlus = faSquarePlus;
   faSave = faSave;
 
   constructor(
