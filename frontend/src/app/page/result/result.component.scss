@@ -9,6 +9,7 @@ h1, .play-button-text {
 }
 
 .play-button-text {
+  color: white;
   font-size: 1rem;
   // text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
   //             0px 8px 13px rgba(0,0,0,0.1),
@@ -20,6 +21,7 @@ button:hover .play-button-text {
   // font-size: 1.1rem;
   text-shadow: none;
   font-size: 0.95rem;
+  color: aquamarine;
 }
 
 
