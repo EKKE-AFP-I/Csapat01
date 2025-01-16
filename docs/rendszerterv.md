@@ -6,10 +6,10 @@ A projekt célja egy olyan webes alkalmazás kifejlesztése, amely lehetőséget
 Célunk az, hogy a rendszer platformfüggetlen legyen, ezáltal hozzáférhető számítógépeken, tableteken és okostelefonokon keresztül is. Az alkalmazás ingyenesen elérhető, és regisztráció után a felhasználó teljes körű hozzáférést kap a funkciókhoz. Minden téma végén feladatokkal tesztelhetik tudásukat, az eredményeket pedig a rendszer menti a profiljukba.
 
 # 2. Projektterv
-Szerepkörök:
-Front-end munkálatok: Kovács Levente, Hajdu Attila, Fülep Viktor
-Back-end munkálatok: Fülep Viktor, Hajdu Attila, Kovács Levente
-Dokumentáció készítése: Hajdu Attila, Fülep Viktor, Kovács Levente
+Szerepkörök:\
+Front-end munkálatok: Kovács Levente, Hajdu Attila, Fülep Viktor\
+Back-end munkálatok: Fülep Viktor, Hajdu Attila, Kovács Levente\
+Dokumentáció készítése: Hajdu Attila, Fülep Viktor, Kovács Levente\
 
 Ütemterv:
 Funkció|Feladat|Prioritás|Állapot
@@ -87,9 +87,10 @@ Felhasznált technológiák
 - scss (sass)
 
 # 7. Architektúrális terv
-Back-end: 
-A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A kliens oldali programokat egy php alapú REST api szolgálja ki, ez csatlakozik az adatbázis szerverhez. A kliensekkel JSON objektumokkal kommunikál. 
-Front-end: 
+Back-end:\
+A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A kliens oldali programokat egy php alapú REST api szolgálja ki, ez csatlakozik az adatbázis szerverhez. A kliensekkel JSON objektumokkal kommunikál.\
+\
+Front-end:\
 A web alkalmazás Angular JS keretrendszer használatával készül el.
 
 # 8. Adatbázis terv
@@ -97,3 +98,9 @@ A web alkalmazás Angular JS keretrendszer használatával készül el.
 
 
 # 9. Implementációs terv
+Back-end:\
+Az adatbázishoz való kapcsolódás, a táblákból történő lekérdezések, a táblákba történő tárolások és a táblákban történő módosításokat és történő törléseket megvalósító metódusokat php nyelven fogjuk írni. Ezeket a műveleteket amennyire csak lehet külön fájlokba írva készítjük és így fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság és könnyebb bővítés érdekében.\
+\
+Front-end:\
+A webes felület főként HTML, CSS, Javascript és Angular nyelven fog készülni. Reszponzív, mobile first szemléletmóddal lesz fejlesztve. Single page web app fog készülni. Az app standalone komponensekből épül majd fel, nem lesznek megvásárolt komponenseink, nyílt forráskódú project lesz.
+
