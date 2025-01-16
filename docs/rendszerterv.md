@@ -85,3 +85,5 @@ Felhasznált technológiák
 - typescript
 - html5
 - scss (sass)
+
+# 7. Architektúrális terv
