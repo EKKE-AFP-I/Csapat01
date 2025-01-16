@@ -71,3 +71,17 @@ Kvíz kérdés módosítása|Admin felhasználóként az admin felületen módos
 >>* Az adminisztrátorok statisztikákat nézhetnek az aktív felhasználókról és új kérdéseket hozhatnak létre.
 
 # 6. Fizikai környezet
+A játék elsősorban web platformra készült, asztali gépre tabletre és mobilra egyszerre. Reszponzív, mobile first szemléletmóddal fejlesztve. Single page web app.  Az app standalone komponensekből épül fel, nincsenek megvásárolt komponenseink, nyílt forráskódú project.
+Fejlesztői eszközök:
+- XAMPP Control Panel
+- phpmyadmin
+- Visual Studio Code
+Felhasznált csomagok:
+- bootstrap5
+- angular material
+- fontawesome6
+Felhasznált technológiák
+- angular 18
+- typescript
+- html5
+- scss (sass)
