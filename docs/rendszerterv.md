@@ -45,3 +45,5 @@ Kvíz|A játék többkérdéses kvízekből áll, ahol a felhasználó a helyes 
 Kvíz indítás|Bal felső sarokba az ikonba kattintva előhozható és indítható a játék.
 Kvíz kérdés létrehozás|Admin felhasználóként az admin felületen új kérdés hozható létre.
 Kvíz kérdés módosítása|Admin felhasználóként az admin felületen módosíthatóak a kérdések és válaszok.
+
+# 5. Funkcionális terv
