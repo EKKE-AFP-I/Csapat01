@@ -57,34 +57,23 @@ export class AdminEditComponent {
           quiz.id = (parseInt(quizes[quizes.length - 1].id) + 1).toString();
           this.quizService.create(quiz)
           .subscribe({
-            error: (error) => console.log(error), //this.onDanger('We could not create the shop item.<br>Please try again later!', 'Something went wrong.')
+            error: (error) => console.log(error),
             complete: () => {
               this.router.navigate(['admin-home']);
-              // this.onSuccess('admin-home item created.');
             }
           });
-          // this.onSuccess('admin-home item created.');
         }
       })
     } else {
       this.quizService.update(quiz)
       .subscribe({
-        error: (error) => console.log(error), // this.onDanger('We could not update the admin-home item.<br>Please try again later!', 'Something went wrong.'),
+        error: (error) => console.log(error),
         complete: () => {
           this.router.navigate(['admin-home']);
-          // this.onSuccess('Shop item updated.');
         }
       });
     }
   }
-
-  // onDanger(arg0: string, arg1: string): void {
-  //   throw new Error('Method not implemented.');
-  // }
-  // onSuccess(arg0: string) {
-  //   throw new Error('Method not implemented.');
-  // }
-
 
   consoleWrite(obj: any) {
     console.log(obj);

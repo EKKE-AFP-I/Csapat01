@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
-// import { QuizService } from '../../service/quiz.service';
-// import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-answer',
@@ -14,10 +12,8 @@ export class AnswerComponent {
 
   @Input() answer: string = '';
 
-  // list$ = this.quizService.getAll();
 
   constructor(
-    // private quizService: QuizService,
     private router: Router,
   ) { }
 

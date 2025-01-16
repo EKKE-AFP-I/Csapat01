@@ -2,8 +2,6 @@
   <div class="container-fluid justify-content-between px-4 game-played">
     <a class="navbar-brand active text-white" [routerLink]="['question']" (click)="inputSidenav.close()">Quiz</a>
     <div class="d-flex flex-row justify-content-center align-items-center">
-      <!-- <app-lang-switcher class="me-4"></app-lang-switcher> -->
-      <!-- <div class="navbar-item text-white me-3">Login</div> -->
 
       <div *ngIf="!loggedObject.user" class="nav-item content__item mx-3 my-lg-0 h-min-content">
         <button (click)="inputSidenav.close()" class="button button--anthe" id="selenium__login" [routerLink]="['/login']"
@@ -23,8 +21,6 @@
         </button>
       </div>
 
-      <!-- <a *ngIf="!loggedObject.user" class="navbar-item text-white me-3" [routerLink]="['login']" (click)="inputSidenav.close()">Login</a>
-      <a *ngIf="loggedObject.user" class="navbar-item text-white me-3" [routerLink]="['']" (click)="[inputSidenav.close(), logout()]">Logout</a> -->
       <label for="check">
         <input [checked]="inputSidenavState" type="checkbox" id="check" (click)="inputSidenav.toggle()" />
         <span></span>
@@ -32,6 +28,5 @@
         <span></span>
       </label>
     </div>
-    <!-- <div i18n class="small py-auto">Menu </div> -->
   </div>
 </nav>

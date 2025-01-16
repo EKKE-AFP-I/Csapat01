@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, Input } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaConfig, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBars, faCoins, faRightFromBracket, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { MatSidenav } from '@angular/material/sidenav';
 import { AuthService } from '../../../service/auth.service';
@@ -45,12 +45,12 @@ export class NavbarComponent {
   }
 
   constructor(
-    // faConfig: FaConfig,
+    faConfig: FaConfig,
     private authService: AuthService,
     private userService: UserService,
     private router: Router,
   ) {
-    // faConfig.fixedWidth = true;
+    faConfig.fixedWidth = true;
   }
 
   logout() {
