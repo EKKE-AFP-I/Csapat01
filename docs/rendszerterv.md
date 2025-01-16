@@ -29,3 +29,5 @@ Front-end|Admin felület elkészítése|1|100
 Front-end|Adatok szerkesztése felület elkészítése|1|100
 Front-end|Kvíz felület elkészítése|1|100
 Front-end|Eredmény felület elkészítése|1|100
+
+# 3. Üzleti folyamatok modellje
