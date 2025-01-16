@@ -59,6 +59,8 @@ Az adminisztrátorok új kvíz kérdéseket és válaszlehetőségeket rögzíth
 Minden bejelentkezett felhasználó játszhat a játékkal, ahol egy kérdést és négy válaszlehetőséget kapnak. A helyes válaszért 1 pont jár, a helytelenért pedig 0 pont.
 Tároljuk a játékokonkénti eredményeket, valamint a felhasználók összesített eredményeit, azonban jelenleg még nincs lehetőség ezek kilistázására.
 
+![uzleti_folyamatok_modellje](https://github.com/EKKE-AFP-I/Csapat01/blob/attila/docs/imgs/uzleti_folyamatok_modellje.png)
+
 # 7. Követelmény lista
 ID|Verzió|Név|Kifejtés
 --|------|---|--------
@@ -70,8 +72,6 @@ K05|V1.0|Kvíz|A játék többkérdéses kvízekből áll, ahol a felhasználó 
 K06|V1.0|Kvíz indítás|Bal felső sarokba az ikonba kattintva előhozható és indítható a játék.
 K07|V1.0|Kvíz kérdés létrehozás|Admin felhasználóként az admin felületen új kérdés hozható létre.
 K08|V1.0|Kvíz kérdés módosítása|Admin felhasználóként az admin felületen módosíthatóak a kérdések és válaszok.
-
-![uzleti_folyamatok_modellje](https://github.com/EKKE-AFP-I/Csapat01/blob/attila/docs/imgs/uzleti_folyamatok_modellje.png)
 
 
 # 8. Fogalomtár
