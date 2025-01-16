@@ -1,1 +1,145 @@
-/* You can add global styles to this file, and also import other style files */
+// ----- FONT FAMILIES ------
+@font-face {
+  font-family: game-played;
+  src: url(./assets/fonts/GamePlayed-vYL7.ttf) format("TrueType");
+}
+
+// @font-face {
+//   font-family: nunito;
+//   src: url(./assets/fonts/Nunito-VariableFont_wght.ttf) format("TrueType");
+// }
+
+// @font-face {
+//   font-family: nunito-regular;
+//   src: url(./assets/fonts/Nunito-Regular.ttf) format("TrueType");
+// }
+
+// @font-face {
+//   font-family: nunito-bold;
+//   src: url(./assets/fonts/Nunito-Bold.ttf) format("TrueType");
+// }
+
+// @font-face {
+//   font-family: nunito-extra-bold;
+//   src: url(./assets/fonts/Nunito-ExtraBold.ttf) format("TrueType");
+// }
+
+// @font-face {
+//   font-family: nunito-black;
+//   src: url(./assets/fonts/Nunito-Black.ttf) format("TrueType");
+// }
+
+// ----- VARIABLES ------
+// $nunito: nunito;
+$nav-height: 74px;
+$background-color: #212121;
+$theme: #00ffff; //#7fff00;
+$theme-2: #da70d6;
+$ban-color: yellow;
+$unban-color: green;
+$edit-color: aqua;
+$delete-color: red;
+$white: #fff;
+$black: #000;
+$darker: #191919;
+$dark: #212529;
+$gray: #aaa;
+$gold: #ffd700;
+$silver: #C0C0C0;
+$bronze: #b08d57;
+$red: #ff0000;
+$info: #45a7e7;
+$success: #67be4e;
+$warning: #ffc825;
+$danger: #e9493f;
+
+// ----- GLOBAL CLASSES ------
+
+.nav-gap {
+  padding-top: $nav-height;
+}
+
+.game-played {
+  font-family: game-played;
+}
+
+.verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h-min-content {
+  height: min-content;
+}
+
+.background {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  // background-image: url('../../../assets/img/joshua-earle-9idqIGrLuTE-unsplash.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+.bg-darken-wrap {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: rgba(25, 25, 25, 0.6);
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+              0px 8px 13px rgba(0,0,0,0.1),
+              0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.text-red {
+  color: $red;
+}
+
+.text-green {
+  color: $success;
+}
+
+// .nunito {
+//   font-family: nunito;
+// }
+
+// .nunito-400 {
+//   font-family: nunito-regular;
+// }
+
+// .nunito-700 {
+//   font-family: nunito-bold;
+// }
+
+// .nunito-800 {
+//   font-family: nunito-extra-bold;
+// }
+
+// .nunito-900 {
+//   font-family: nunito-black;
+// }
+
+// .nunito-1000 {
+//   font-family: nunito;
+//   font-weight: 1000;
+// }
+
+.top-gap {
+  margin-top: 74px;
+}
+
+// ----- GLOBALLY STLYING ------
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  // font-family: nunito, "Helvetica Neue", sans-serif;
+  font-size: 1.4rem;
+  // background-color: #000;
+
+}

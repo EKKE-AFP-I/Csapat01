@@ -1,0 +1,22 @@
+<div class="background"></div>
+<main class="nav-gap d-flex align-items-center justify-content-center min-vh-100">
+  <section class="d-flex flex-column align-items-center justify-content-center bg-darken-wrap">
+    <h1 class="d-flex flex-column text-center game-played text-white">
+      <small class="mb-4">Your result</small>
+      <span class="display-4">[{{correctAnswersCount}}/{{questionCount}}]</span>
+    </h1>
+    <button [routerLink]="['/question']" class="mt-5">
+      <span class="play-button-text game-played">P L A Y ᲼ A G A I N</span>
+      <!-- <span class="play-button-text"> A A A A A A A A A A A A A A</span> -->
+      <div id="clip">
+          <div id="leftTop" class="corner"></div>
+          <div id="rightBottom" class="corner"></div>
+          <div id="rightTop" class="corner"></div>
+          <div id="leftBottom" class="corner"></div>
+      </div>
+      <span id="rightArrow" class="arrow"></span>
+      <span id="leftArrow" class="arrow"></span>
+    </button>
+
+  </section>
+</main>

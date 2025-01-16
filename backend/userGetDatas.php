@@ -9,7 +9,7 @@
     function get_user_by_id($id) { 
         $query = 'SELECT * FROM users WHERE id = :id;'; 
         $query_params = ['id' => $id]; 
-        $user = execute_ql_list($query, $query_params); 
+        $user = execute_dml($query, $query_params); 
         return json_encode($user); 
     }
     function get_users_by_score($user_cnt) { 
@@ -21,7 +21,7 @@
     function get_user_role_by_id($id) { 
         $query = 'SELECT role FROM users WHERE id = :id;'; 
         $query_params = ['id' => $id]; 
-        $role = execute_ql_list($query, $query_params); 
+        $role = execute_dml($query, $query_params); 
         return json_encode($role);
     }
 

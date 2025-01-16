@@ -1,0 +1,142 @@
+{
+  "user": [
+    {
+      "id": "user",
+      "username": "user",
+      "password": "user",
+      "role": "user"
+    },
+    {
+      "id": "admin",
+      "username": "admin",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "",
+      "username": "",
+      "password": "",
+      "role": "user"
+    },
+    {
+      "id": "asd",
+      "username": "asd",
+      "password": "asd",
+      "role": "user"
+    },
+    {
+      "id": "a",
+      "username": "a",
+      "password": "asd",
+      "role": "user"
+    },
+    {
+      "id": "asd123",
+      "username": "asd123",
+      "password": "asd",
+      "role": "user"
+    },
+    {
+      "id": "asdasd",
+      "username": "asdasd",
+      "password": "asd",
+      "role": "admin"
+    },
+    {
+      "id": "a",
+      "username": "a",
+      "password": "asd",
+      "role": "admin"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "1",
+      "questionType": "asd",
+      "question": "Hány éves a kapitány?",
+      "answer1": "42",
+      "answer2": "42",
+      "answer3": "42",
+      "answer4": "42",
+      "correctAnswer": 1,
+      "active": false
+    },
+    {
+      "id": "2",
+      "questionType": "asd",
+      "question": "asd aidfghjk akjhfd kéjashfd élkj lakjsdflkj ékljh léasjkfjlk",
+      "answer1": "asdasd",
+      "answer2": "asd",
+      "answer3": "asdads",
+      "answer4": "asdasd",
+      "correctAnswer": 4,
+      "active": true
+    },
+    {
+      "id": "3",
+      "questionType": "a",
+      "question": "Szia!",
+      "answer1": "asdasddas",
+      "answer2": "ads",
+      "answer3": "a",
+      "answer4": "asd",
+      "correctAnswer": 1,
+      "active": true
+    },
+    {
+      "id": "4",
+      "questionType": "Általános",
+      "question": "Hány éves a kapitány?asdasasdasd",
+      "answer1": "123",
+      "answer2": "12",
+      "answer3": "12",
+      "answer4": "12",
+      "correctAnswer": 1,
+      "active": true
+    },
+    {
+      "id": "5",
+      "questionType": "Általános",
+      "question": "Hány éves a Kapitány #3",
+      "answer1": "123",
+      "answer2": "123",
+      "answer3": "123",
+      "answer4": "123",
+      "correctAnswer": 1,
+      "active": true
+    },
+    {
+      "id": "6",
+      "questionType": "Általános",
+      "question": "???",
+      "answer1": "40",
+      "answer2": "12",
+      "answer3": "12",
+      "answer4": "12",
+      "correctAnswer": 1,
+      "active": true
+    },
+    {
+      "id": "7",
+      "questionType": "New",
+      "question": "New",
+      "answer1": "New",
+      "answer2": "New",
+      "answer3": "New",
+      "answer4": "New",
+      "correctAnswer": 1,
+      "active": true
+    },
+    {
+      "id": "8",
+      "questionType": "New2",
+      "question": "New2",
+      "answer1": "New2",
+      "answer2": "New2",
+      "answer3": "New2",
+      "answer4": "New2",
+      "correctAnswer": 1,
+      "active": true
+    }
+  ]
+}

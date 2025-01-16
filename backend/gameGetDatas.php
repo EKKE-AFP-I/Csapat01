@@ -9,7 +9,7 @@
     function get_game_by_id($id) { 
         $query = 'SELECT * FROM games WHERE id = :id;'; 
         $query_params = ['id' => $id]; 
-        $game = execute_ql_list($query, $query_params); 
+        $game = execute_dml($query, $query_params); 
         return json_encode($game); 
     }
     function get_all_games_by_user_id($user_id) { 

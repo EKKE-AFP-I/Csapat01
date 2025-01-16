@@ -1,0 +1,34 @@
+@use '../styles.scss' as styles;
+
+// .page {
+
+// }
+
+// .page {
+//   padding-top: 74px !important; // NAVBAR-FIXED FIX
+// }
+
+.scroll-disabled {
+  // height: 100%;
+  // position: fixed;
+  // width: 100%;
+  overflow-y: scroll !important;
+}
+
+mat-sidenav {
+  width: 100%;
+  overflow: hidden !important;
+
+  // &:not(.mat-drawer-side) {
+  //   position: fixed;
+  // }
+}
+
+app-sidenav {
+  overflow: hidden !important;
+
+}
+
+// mat-sidenav-backdrop {
+//   position: fixed !important;
+// }
