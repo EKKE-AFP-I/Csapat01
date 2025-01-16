@@ -91,3 +91,5 @@ Back-end:
 A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A kliens oldali programokat egy php alapú REST api szolgálja ki, ez csatlakozik az adatbázis szerverhez. A kliensekkel JSON objektumokkal kommunikál. 
 Front-end: 
 A web alkalmazás Angular JS keretrendszer használatával készül el.
+
+# 8. Adatbázis terv
