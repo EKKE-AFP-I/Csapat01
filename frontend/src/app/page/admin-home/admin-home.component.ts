@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Renderer2 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-// import { AnswerComponent } from '../../common/answer/answer.component';
 import { Router, RouterModule } from '@angular/router';
 import { QuizService } from '../../service/quiz.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -13,7 +12,6 @@ import { Quiz } from '../../model/quiz';
   standalone: true,
   imports: [
     CommonModule,
-    // AnswerComponent,
     MatButtonModule,
     RouterModule,
     FontAwesomeModule
@@ -43,11 +41,6 @@ export class AdminHomeComponent {
   ngOnInit(): void {
     this.renderer.setProperty(window, 'scrollTo', [0, 0]);
   }
-
-  // constructor(
-  //   private quizService: QuizService,
-  //   private router: Router,
-  // ) {  }
 
   onEditOne(quiz: Quiz): void {
     console.log();
