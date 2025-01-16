@@ -69,3 +69,5 @@ Kvíz kérdés módosítása|Admin felhasználóként az admin felületen módos
 >>3. Eredmények kezelése:
 >>* A regisztrált felhasználók egy nyilvános táblázaton nyomon követhetik a teljesítésüket. -feljesztés alatt-
 >>* Az adminisztrátorok statisztikákat nézhetnek az aktív felhasználókról és új kérdéseket hozhatnak létre.
+
+# 6. Fizikai környezet
