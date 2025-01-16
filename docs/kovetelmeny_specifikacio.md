@@ -71,8 +71,6 @@ K06|V1.0|Kvíz indítás|Bal felső sarokba az ikonba kattintva előhozható és
 K07|V1.0|Kvíz kérdés létrehozás|Admin felhasználóként az admin felületen új kérdés hozható létre.
 K08|V1.0|Kvíz kérdés módosítása|Admin felhasználóként az admin felületen módosíthatóak a kérdések és válaszok.
 
-# 8. Riportok
-
 
 # 9. Fogalomtár
 * Adminisztrátor: Az oldal kezeéséért felelős regisztrált és bejelentkezett felhasználó. Joga van a kvíz kérdéseket módosítani, meglévőeket törölni vagy újakat tárolni.
