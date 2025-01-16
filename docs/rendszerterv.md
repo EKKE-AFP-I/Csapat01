@@ -104,3 +104,4 @@ Az adatbázishoz való kapcsolódás, a táblákból történő lekérdezések, 
 Front-end:\
 A webes felület főként HTML, CSS, Javascript és Angular nyelven fog készülni. Reszponzív, mobile first szemléletmóddal lesz fejlesztve. Single page web app fog készülni. Az app standalone komponensekből épül majd fel, nem lesznek megvásárolt komponenseink, nyílt forráskódú project lesz.
 
+# 10. Teszt terv
