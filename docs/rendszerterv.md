@@ -47,3 +47,25 @@ Kvíz kérdés létrehozás|Admin felhasználóként az admin felületen új ké
 Kvíz kérdés módosítása|Admin felhasználóként az admin felületen módosíthatóak a kérdések és válaszok.
 
 # 5. Funkcionális terv
+>Felhasználók:
+>> Vendég felhasználók:
+>>* Regisztráció nélkül próbálják ki a játékot, de eredményeiket nem menti a rendszer.
+>>* Regisztrált felhasználók:
+>>* Személyre szabott profil, eredmények mentése, fejlődés nyomon követése.
+>
+>> Adminisztrátorok:
+>> * Felügyelik a rendszer működését, kezelik a kérdéseket és témákat.
+
+>Használati esetek:
+>>1. Bejelentkezés:
+>>* A felhasználók regisztrálhatnak vagy bejelentkezhetnek email-címük és jelszavuk segítségével.
+>>* Az adminisztrátorok kezelhetik a kérdéseket (létrehozás, módosítás, törlés).
+>
+>>2. Játékmenet:
+>>* A felhasználó egy véletlenszerű kérdéseket kap, majd kérdésekre válaszol.
+>>* Helyes válasz esetén elfoglal egy országot a térképen és pontot kap.
+>>* Nehézségi szintek biztosítva vannak a tanulás támogatására.
+>
+>>3. Eredmények kezelése:
+>>* A regisztrált felhasználók egy nyilvános táblázaton nyomon követhetik a teljesítésüket. -feljesztés alatt-
+>>* Az adminisztrátorok statisztikákat nézhetnek az aktív felhasználókról és új kérdéseket hozhatnak létre.
