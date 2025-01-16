@@ -105,3 +105,23 @@ Front-end:\
 A webes felület főként HTML, CSS, Javascript és Angular nyelven fog készülni. Reszponzív, mobile first szemléletmóddal lesz fejlesztve. Single page web app fog készülni. Az app standalone komponensekből épül majd fel, nem lesznek megvásárolt komponenseink, nyílt forráskódú project lesz.
 
 # 10. Teszt terv
+Funkcionális teszt fog készülni mindhárom fejlesztő részéről A teszt célja a rendszer és a komponensei funkcionalitásának teljes vizsgálata, ellenőrzése, a rendszer által megvalósított üzleti szolgáltatások verifikálása.
+
+Tesztelendő funkciók\
+Back-end service:\
+Képesnek kell lennie csatlakozni a webes klienshez. Képesnek kell lennie egy időben kiszolgálni több klienst is. Fel kell tudnia tölteni, és le kell tudnia kérdezni az adatbázis adatait. Képesnek kell lennie már meglévő adat módosítására. Képesnek kell lennie már meglévő adat törlésére. Képesnek kell lennie minden felületen elérhető funkciók biztosítására.
+
+Login felület:\
+Képesnek kell lennie adatbázisban lévő egyezőség alapján beengedni - átírányítani - felhasználókat a kezdőoldalra.
+
+Regisztrációs felület:\
+Ezen felületen a megfelelő adatok megadása mellett a megerősítés gombra kattintva a felhasználó regisztrációjának a funkcionális specifikációban leírtak szerint végbe kell mennie, majd elérhetővé kell tenni a bejelentkezést a felhasználó számára. Hibás regisztrációs adatok megadásakor hibaüzenetet kell kapjon a felhasználó.
+
+Admin felület:\
+Admin jogosultsággal bejelentkezett felhasználónak el kell tudnia érnie ezt a felületet, látnia kell az adatbázisban tárolt adatokat kártyákon.
+
+Adatok szerkesztése felület:\
+Admin jogosultsággal bejelentkezett felhasználónak el kell tudnia érnie ezt a felületet, ahol képesnek kell lennie az adatokat módosítani, törölni vagy újakat létrehozni. Ezeket a módosításokat le kell követni adatbázis szinten is.
+
+Játék felület:\
+Nem regisztrált felhasználónak is el kell tudnia érnie login és regisztrációs felületen illetve regisztrált és bejelentkezett felhasználónak is el kell tudnia érnie ezt a felületet. Képesnek kell lennie a játékot végig játszania, egymás után kiválasztani a szerinte helyes válaszokat annyi kérdésen keresztül, amennyi előre be lett állítva.
