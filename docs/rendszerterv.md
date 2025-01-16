@@ -93,3 +93,4 @@ Front-end:
 A web alkalmazás Angular JS keretrendszer használatával készül el.
 
 # 8. Adatbázis terv
+![adatbazis](https://github.com/EKKE-AFP-I/Csapat01/blob/attila/docs/imgs/adatb.png)
