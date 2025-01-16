@@ -91,7 +91,7 @@ Back-end:\
 A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A kliens oldali programokat egy php alapú REST api szolgálja ki, ez csatlakozik az adatbázis szerverhez. A kliensekkel JSON objektumokkal kommunikál.\
 \
 Front-end:\
-A web alkalmazás Angular JS keretrendszer használatával készül el.
+A web alkalmazás Angular JS keretrendszer használatával készül el. Az alkalmazás moduláris felépítésű, ahol külön modulok kezelik a felhasználói bejelentkezést, a kvíz kérdések kezelését, és az eredmények megjelenítését. Az adatokat egy központi State Management (pl. NgRx) kezeli, amely biztosítja a komponensek közötti szinkronizációt. A kérdéseket és válaszokat egy base service rendszer szolgáltatja a komponensek felé. Az Angular Material és a Bootstrap5 biztosítja a reszponzív és letisztult felhasználói felületet.
 
 # 8. Adatbázis terv
 ![adatbazis](https://github.com/EKKE-AFP-I/Csapat01/blob/attila/docs/imgs/adatb.png)
@@ -102,7 +102,7 @@ Back-end:\
 Az adatbázishoz való kapcsolódás, a táblákból történő lekérdezések, a táblákba történő tárolások és a táblákban történő módosításokat és történő törléseket megvalósító metódusokat php nyelven fogjuk írni. Ezeket a műveleteket amennyire csak lehet külön fájlokba írva készítjük és így fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság és könnyebb bővítés érdekében.\
 \
 Front-end:\
-A webes felület főként HTML, CSS, Javascript és Angular nyelven fog készülni. Reszponzív, mobile first szemléletmóddal lesz fejlesztve. Single page web app fog készülni. Az app standalone komponensekből épül majd fel, nem lesznek megvásárolt komponenseink, nyílt forráskódú project lesz.
+A webes felület főként HTML, SCSS (SASS) és Angular (TypeScript) technológiákkal fog készülni. Reszponzív, mobile first szemléletmóddal lesz fejlesztve. Single page web app fog készülni. Az app standalone komponensekből épül majd fel, nem lesznek megvásárolt komponenseink, nyílt forráskódú project lesz.
 
 # 10. Teszt terv
 Funkcionális teszt fog készülni mindhárom fejlesztő részéről A teszt célja a rendszer és a komponensei funkcionalitásának teljes vizsgálata, ellenőrzése, a rendszer által megvalósított üzleti szolgáltatások verifikálása.
