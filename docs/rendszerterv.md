@@ -31,3 +31,5 @@ Front-end|Kvíz felület elkészítése|1|100
 Front-end|Eredmény felület elkészítése|1|100
 
 # 3. Üzleti folyamatok modellje
+
+![uzleti_folyamatok_modelje](https://github.com/EKKE-AFP-I/Csapat01/blob/attila/docs/imgs/uzleti_folyamatok_modellje.png)
